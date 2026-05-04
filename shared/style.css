@@ -334,6 +334,17 @@ h3 { font-size: 28px; }
 .article h2 { margin-top: 38px; font-size: 38px; }
 .pull-quote { border-left: 5px solid var(--teal); padding: 18px 22px; color: var(--teal); font-family: var(--font-heading); font-size: 28px; font-style: italic; background: var(--mint-pale); }
 .spotlight { background: var(--pink); border-radius: 8px; padding: 26px; margin: 32px 0; }
+.recipe-post-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 34px; align-items: start; }
+.recipe-post { background: #fff; border-radius: 8px; padding: 28px; box-shadow: var(--shadow); border: 1px solid rgba(127,217,192,.24); font-size: 18px; }
+.recipe-post h2 { margin-top: 34px; font-size: 40px; }
+.article-featured-img { width: 100%; height: 360px; object-fit: cover; border-radius: 8px; margin-bottom: 28px; }
+.styled-list { counter-reset: item; list-style: none; padding: 0; display: grid; gap: 12px; }
+.styled-list li { background: var(--mint-pale); border-radius: 8px; padding: 14px 16px; color: var(--green); font-weight: 700; }
+.tips-box { background: var(--pink); border-radius: 8px; padding: 24px; margin: 34px 0; border: 1px solid rgba(249,184,196,.8); }
+.tips-box h3 { color: var(--green); font-style: italic; margin-bottom: 12px; }
+.made-close { color: var(--green); font-weight: 800; font-family: var(--font-heading); font-size: 24px; }
+.recipe-sidebar { position: sticky; top: 104px; display: grid; gap: 18px; }
+.read-more { display: inline-flex; margin-top: 12px; color: var(--teal); font-weight: 900; }
 .about-hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 42px; text-align: left; }
 .founder-photo { width: 360px; height: 390px; object-fit: cover; border-radius: 42% 58% 52% 48% / 50% 44% 56% 50%; margin-left: auto; }
 .belief-section { background: var(--pink); }
@@ -416,6 +427,8 @@ h3 { font-size: 28px; }
   .slider-arrow.prev { left: 18px; }
   .slider-arrow.next { right: 18px; }
   .benefits-grid, .recipe-grid, .blog-grid, .ingredient-grid, .like-grid, .benefit-cards, .footer-grid { grid-template-columns: 1fr; }
+  .recipe-post-grid { grid-template-columns: 1fr; }
+  .recipe-sidebar { position: static; }
   .recipe-note { grid-template-columns: 1fr; }
   .signup-row { border-radius: 22px; flex-direction: column; gap: 8px; padding: 10px; }
   .signup-row input { padding: 13px 14px; }

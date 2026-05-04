@@ -17,9 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const current = window.location.pathname.split("/").pop() || "index.html";
+  const activeTarget = current.startsWith("recipe-")
+    ? "recipes.html"
+    : current.startsWith("blog-")
+      ? "blog.html"
+      : current === "coming-soon.html"
+        ? "coming-soon.html"
+        : current;
   document.querySelectorAll(".nav-link").forEach((link) => {
     const href = link.getAttribute("href");
-    if (href === current || (current === "" && href === "index.html")) {
+    if (href === activeTarget || (current === "" && href === "index.html")) {
       link.classList.add("active");
     }
   });
@@ -57,6 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const show = filter === "all" || card.dataset.cat === filter;
         card.classList.toggle("hide", !show);
       });
+    });
+  });
+
+  document.querySelectorAll(".signup-row").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const button = form.querySelector("button");
+      const input = form.querySelector("input");
+      if (button) button.textContent = "You're In";
+      if (input) input.value = "";
+      form.setAttribute("aria-label", "Thanks for subscribing");
     });
   });
 });
