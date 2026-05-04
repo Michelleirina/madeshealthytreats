@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts/blog"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Read Time", name: "readTime", widget: "string" }
+      - { label: "Cover Image", name: "coverImage", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_posts/recipes"
+    create: true
+    fields:
+      - { label: "Recipe Name", name: "title", widget: "string" }
+      - { label: "Health Goal", name: "category", widget: "select", options: ["Weight Loss","Energy Boost","Skin Glow","Gut Health","Immunity"] }
+      - { label: "Prep Time (minutes)", name: "prepTime", widget: "number" }
+      - { label: "Calories", name: "calories", widget: "number" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Ingredients", name: "ingredients", widget: "list" }
+      - { label: "Instructions", name: "instructions", widget: "markdown" }
+      - { label: "Nutrition Facts", name: "nutrition", widget: "object", fields: [
+          { label: "Protein (g)", name: "protein", widget: "number" },
+          { label: "Carbs (g)", name: "carbs", widget: "number" },
+          { label: "Fat (g)", name: "fat", widget: "number" },
+          { label: "Fiber (g)", name: "fiber", widget: "number" }
+        ]}
