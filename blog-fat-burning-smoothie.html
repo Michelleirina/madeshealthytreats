@@ -21,36 +21,34 @@
   <link rel="stylesheet" href="shared/style.css">
 </head>
 <body>
-<header class="navbar">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-brand">
-  <div class="nav-brand-inner">
-    <div class="nav-brand-icon">
-      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="26" cy="26" r="26" fill="#E8FAF5"/>
-        <path d="M26 10 C18 10 13 16 13 22 C13 26 15 29 18 31 L18 36 C18 37 19 38 20 38 L32 38 C33 38 34 37 34 36 L34 31 C37 29 39 26 39 22 C39 16 34 10 26 10Z" fill="#3DBFA0"/>
-        <rect x="20" y="36" width="12" height="3" rx="1.5" fill="#2D7A52"/>
-        <path d="M21 22 C21 19 23 17 26 17 C29 17 31 19 31 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-inner">
+      <div class="nav-brand-icon">
+        <svg width="48" height="48" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="26" fill="#E8FAF5"/>
+          <path d="M26 10 C18 10 13 16 13 22 C13 26 15 29 18 31 L18 36 C18 37 19 38 20 38 L32 38 C33 38 34 37 34 36 L34 31 C37 29 39 26 39 22 C39 16 34 10 26 10Z" fill="#3DBFA0"/>
+          <rect x="20" y="36" width="12" height="3" rx="1.5" fill="#2D7A52"/>
+          <path d="M21 22 C21 19 23 17 26 17 C29 17 31 19 31 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-name">Mades<span class="nav-brand-accent">healthy</span>treats</span>
+        <span class="nav-brand-tagline">Healthy Food Made Easy</span>
+      </div>
     </div>
-    <div class="nav-brand-text">
-      <span class="nav-brand-name">Mades<span style="color:#3DBFA0">healthy</span>treats</span>
-      <span class="nav-brand-tagline">Healthy Food Made Easy</span>
-    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="recipes.html">Recipes</a>
+    <a class="nav-link" href="juices.html">Juices</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="coming-soon.html">Shop</a>
+    <button class="nav-cta" onclick="window.location.href='recipes.html'">Try a Recipe ↗</button>
   </div>
-</a>
-      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="recipes.html">Recipes</a>
-        <a class="nav-link" href="juices.html">Juices</a>
-        <a class="nav-link" href="blog.html">Blog</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="coming-soon.html">Shop</a>
-        <a class="nav-cta" href="recipes.html">Try a Recipe ↗</a>
-      </nav>
-    </div>
-  </header>
+  <button class="nav-hamburger" id="navHamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+</nav>
 <main>
   <section class="article-hero"><img loading="lazy" src="assets/images/fat-burning-smoothie-ingredients.png" alt="fat burning smoothie ingredients flat lay marble"><div class="container"><span class="eyebrow" style="color:#7FD9C0;">Weight Loss · May 5, 2026</span><h1>Fat Burning Smoothie Ingredients I Actually Use In My Kitchen</h1></div></section>
   <div class="container"><div class="adsense-slot"><!-- AdSense ad unit here --></div></div>
