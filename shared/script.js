@@ -17,13 +17,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const current = window.location.pathname.split("/").pop() || "index.html";
-  const activeTarget = current.startsWith("recipe-")
-    ? "recipes.html"
-    : current.startsWith("blog-")
-      ? "blog.html"
-      : current === "coming-soon.html"
-        ? "coming-soon.html"
-        : current;
+  const juiceRecipePages = new Set([
+    "recipe-celery-detox-juice.html",
+    "recipe-carrot-ginger-juice.html",
+    "recipe-beet-energy-juice.html",
+    "recipe-cucumber-mint-juice.html",
+    "recipe-pineapple-turmeric-juice.html"
+  ]);
+  const activeTarget = current === "juices.html" || juiceRecipePages.has(current)
+    ? "juices.html"
+    : current.startsWith("recipe-")
+      ? "recipes.html"
+      : current.startsWith("blog-")
+        ? "blog.html"
+        : current === "coming-soon.html"
+          ? "coming-soon.html"
+          : current;
   document.querySelectorAll(".nav-link").forEach((link) => {
     const href = link.getAttribute("href");
     if (href === activeTarget || (current === "" && href === "index.html")) {
@@ -61,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.add("active");
 
       cards.forEach((card) => {
-        const show = filter === "all" || card.dataset.cat === filter;
+        const categories = (card.dataset.cat || "").split(/\s+/);
+        const show = filter === "all" || categories.includes(filter);
         card.classList.toggle("hide", !show);
       });
     });
