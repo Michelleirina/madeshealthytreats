@@ -83,23 +83,28 @@ h3 { font-size: 28px; }
   background: #fff;
   border-bottom: 1px solid rgba(127,217,192,0.22);
   box-shadow: 0 2px 12px rgba(127,217,192,0.15);
+  padding: 12px 48px;
+  min-height: 110px;
+  align-items: center;
 }
 .navbar.scrolled { box-shadow: 0 10px 26px rgba(27, 94, 59, .12); }
 .nav-inner {
-  min-height: 130px;
+  min-height: 110px;
   height: auto;
-  padding: 20px 48px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
-.logo img {
-  height: 90px;
-  width: auto;
+.nav-logo-img {
+  height: 100px !important;
+  width: auto !important;
+  max-height: none !important;
   object-fit: contain;
   object-position: left center;
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.12));
+  display: block;
 }
 .logo-fallback { font-family: var(--font-heading); color: var(--green); font-size: 24px; font-weight: 800; }
 .nav-links { display: flex; align-items: center; gap: 26px; }
@@ -451,21 +456,16 @@ h3 { font-size: 28px; }
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-@media (max-width: 1024px) {
-  .nav-inner {
-    min-height: 112px;
-    padding: 20px 32px;
-  }
-  .logo img { height: 70px; }
-}
-
 @media (max-width: 768px) {
   .container { width: min(100% - 28px, 1120px); }
+  .navbar { padding: 12px 18px; }
   .nav-inner {
     min-height: 104px;
-    padding: 20px 18px;
+    padding: 0;
   }
-  .logo img { height: 60px; }
+  .nav-logo-img {
+    height: 72px !important;
+  }
   .hamburger { display: block; }
   .nav-links {
     position: absolute;
@@ -506,11 +506,14 @@ h3 { font-size: 28px; }
 
 @media (max-width: 480px) {
   .section { padding: 60px 0; }
+  .navbar { padding: 12px 14px; }
   .nav-inner {
     min-height: 92px;
-    padding: 16px 14px;
+    padding: 0;
   }
-  .logo img { height: 60px; }
+  .nav-logo-img {
+    height: 60px !important;
+  }
   .nav-links { top: 92px; }
   .hero-copy h1 { font-size: 48px; }
   .hero-slider { min-height: 820px; }
