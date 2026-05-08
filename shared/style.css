@@ -574,6 +574,7 @@ h3 { font-size: 28px; }
   .recipe-post-grid { grid-template-columns: 1fr; }
   .recipe-sidebar { position: static; }
   .recipe-note { grid-template-columns: 1fr; }
+  .page-hero .container[style*="grid-template-columns"] { grid-template-columns: 1fr !important; text-align: center !important; }
   .signup-row { border-radius: 22px; flex-direction: column; gap: 8px; padding: 10px; }
   .signup-row input { padding: 13px 14px; }
   .footer-bottom { flex-direction: column; }

@@ -24,9 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
     "recipe-cucumber-mint-juice.html",
     "recipe-pineapple-turmeric-juice.html"
   ]);
-  const activeTarget = current === "juices.html" || juiceRecipePages.has(current)
-    ? "juices.html"
-    : current.startsWith("recipe-")
+  const shotRecipePages = new Set([
+    "recipe-ginger-immunity-shot.html",
+    "recipe-turmeric-golden-shot.html",
+    "recipe-acv-detox-shot.html",
+    "recipe-wheatgrass-energy-shot.html",
+    "recipe-beet-performance-shot.html"
+  ]);
+  const activeTarget = current === "shots.html" || shotRecipePages.has(current)
+    ? "shots.html"
+    : current === "juices.html" || juiceRecipePages.has(current)
+      ? "juices.html"
+      : current.startsWith("recipe-")
       ? "recipes.html"
       : current.startsWith("blog-")
         ? "blog.html"
