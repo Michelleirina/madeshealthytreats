@@ -799,13 +799,13 @@ ins.adsbygoogle:not([data-ad-status]) {
 @media (max-width: 768px) {
   .slide-inner {
     flex-direction: column;
-    padding: 70px 20px 30px;
+    padding: 45px 20px 30px;
     gap: 0;
     align-items: center;
   }
 
   .slide-grid {
-    padding: 70px 20px 30px;
+    padding: 45px 20px 30px;
     gap: 0;
     align-items: center;
   }
@@ -829,38 +829,38 @@ ins.adsbygoogle:not([data-ad-status]) {
   .s-visual {
     flex: 0 0 auto;
     width: 100%;
-    height: 220px;
+    height: 320px;
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
     order: 1;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .hero-visual {
     flex: 0 0 auto;
     width: 100%;
-    height: 220px;
-    min-height: 220px;
+    height: 320px;
+    min-height: 320px;
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
     order: 1;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   .s-photo {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 160px !important;
-    height: 200px !important;
+    width: clamp(230px, 68vw, 310px) !important;
+    height: clamp(280px, 78vw, 370px) !important;
     object-fit: cover;
     border-radius: 50% 50% 46% 46% / 58% 58% 42% 42%;
   }
@@ -869,15 +869,15 @@ ins.adsbygoogle:not([data-ad-status]) {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: 160px !important;
-    height: 200px !important;
+    width: clamp(230px, 68vw, 310px) !important;
+    height: clamp(280px, 78vw, 370px) !important;
     object-fit: cover;
     border-radius: 50% 50% 46% 46% / 58% 58% 42% 42% !important;
   }
 
   .photo-blob {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
   }
 
   .s-leaf {
