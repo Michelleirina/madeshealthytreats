@@ -558,15 +558,7 @@ h3 { font-size: 28px; }
 
 @media (max-width: 768px) {
   .container { width: min(100% - 28px, 1120px); }
-  .hero-slider { height: auto; min-height: 760px; }
-  .slide-grid, .featured-grid, .recipe-layout, .about-hero-grid, .belief-grid { grid-template-columns: 1fr; }
-  .slide-grid { padding: 42px 0 72px; gap: 18px; }
-  .hero-visual { min-height: 390px; }
-  .blob-photo { height: 360px; }
-  .ingredient-pills { left: 4px; top: 42%; }
-  .slider-arrow { top: auto; bottom: 18px; }
-  .slider-arrow.prev { left: 18px; }
-  .slider-arrow.next { right: 18px; }
+  .featured-grid, .recipe-layout, .about-hero-grid, .belief-grid { grid-template-columns: 1fr; }
   .benefits-grid, .recipe-grid, .blog-grid, .ingredient-grid, .like-grid, .benefit-cards, .footer-grid { grid-template-columns: 1fr; }
   .featured-post, .article-shell { grid-template-columns: 1fr; }
   .featured-post img { height: 260px; }
@@ -583,11 +575,6 @@ h3 { font-size: 28px; }
 
 @media (max-width: 480px) {
   .section { padding: 60px 0; }
-  .hero-copy h1 { font-size: 48px; }
-  .hero-slider { min-height: 820px; }
-  .hero-actions .btn { width: 100%; }
-  .ingredient-pill { min-width: 148px; font-size: 12px; }
-  .cal-badge { width: 76px; height: 76px; font-size: 20px; }
   .recipe-media { height: 210px; }
   .panel { padding: 20px; }
   .nutrition-cal strong { font-size: 34px; }
@@ -613,32 +600,6 @@ ins.adsbygoogle:not([data-ad-status]) {
   body { font-size: 15px; overflow-x: hidden; }
   .section { padding: 40px 20px; }
   img { max-width: 100%; height: auto; }
-
-  /* HERO SLIDER */
-  .hero { height: auto; min-height: 520px; }
-  .hero-slider { height: auto; min-height: 520px; }
-  .slide-inner { flex-direction: column; padding: 80px 20px 40px; gap: 24px; }
-  .slide-grid { grid-template-columns: 1fr; padding: 48px 20px 64px; gap: 24px; }
-  .s-text { max-width: 100%; }
-  .hero-copy { max-width: 100%; }
-  .s-headline { font-size: 42px; }
-  .hero-copy h1 { font-size: 42px; }
-  .s-visual { height: 280px; width: 100%; }
-  .hero-visual { min-height: 280px; width: 100%; }
-  .s-photo { width: 180px; height: 240px; }
-  .blob-photo { width: 180px; height: 240px; }
-  .s-leaf { font-size: 100px; }
-  .leaf { font-size: 100px; }
-  .ing-pills { left: 0; top: auto; bottom: 0; flex-direction: row; flex-wrap: wrap; gap: 6px; }
-  .ingredient-pills { left: 0; top: auto; bottom: 0; display: flex; flex-direction: row; flex-wrap: wrap; gap: 6px; }
-  .ing-pill { padding: 5px 10px; }
-  .ingredient-pill { padding: 5px 10px; min-width: 0; }
-  .cal-circle { width: 54px; height: 54px; top: 10px; right: 10px; }
-  .cal-badge { width: 54px; height: 54px; top: 10px; right: 10px; font-size: 14px; }
-  .cal-n { font-size: 14px; }
-  .s-ribbon-wrap { top: 20px; left: 10px; }
-  .arrow-btn, .h-arrow { display: none; }
-  .slider-arrow { display: none; }
 
   /* RECIPE GRID */
   .recipe-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -760,9 +721,6 @@ ins.adsbygoogle:not([data-ad-status]) {
   .slide-photo {
     border-radius: 20px !important;
   }
-  .blob-photo {
-    border-radius: 20px !important;
-  }
   .rcard-img, .bcard-img {
     width: 100%;
     object-fit: cover;
@@ -774,14 +732,6 @@ ins.adsbygoogle:not([data-ad-status]) {
 }
 
 @media (max-width: 480px) {
-  .hero { min-height: 480px; }
-  .hero-slider { min-height: 480px; }
-  .s-headline { font-size: 34px; }
-  .hero-copy h1 { font-size: 34px; }
-  .s-visual { height: 240px; }
-  .hero-visual { height: 240px; min-height: 240px; }
-  .s-photo { width: 150px; height: 200px; }
-  .blob-photo { width: 150px; height: 200px; }
   .footer-top { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .ingredients-grid { grid-template-columns: 1fr; }
@@ -949,6 +899,12 @@ ins.adsbygoogle:not([data-ad-status]) {
     height: 50px;
     top: 10px;
     right: 10px;
+  }
+
+  .slider-arrow,
+  .arrow-btn,
+  .h-arrow {
+    display: none;
   }
 
   .ing-pills {
