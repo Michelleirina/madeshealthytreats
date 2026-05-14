@@ -749,54 +749,61 @@ ins.adsbygoogle:not([data-ad-status]) {
 @media (max-width: 768px) {
   .slide-inner {
     flex-direction: column;
-    padding: 38px 20px 34px;
+    padding: 32px 22px 58px;
     gap: 14px;
     align-items: center;
+    height: 100%;
   }
 
   .slide-grid {
-    padding: 38px 20px 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding: 32px 22px 58px;
     gap: 14px;
-    align-items: center;
+    align-items: start;
   }
 
   .s-text {
     flex: 0 0 auto;
     max-width: 100%;
     width: 100%;
-    order: 2;
+    order: 1;
     padding-bottom: 0;
+    text-align: left;
+    z-index: 5;
   }
 
   .hero-copy {
     flex: 0 0 auto;
     max-width: 100%;
     width: 100%;
-    order: 2;
+    order: 1;
     padding-bottom: 0;
     text-align: left;
+    z-index: 5;
   }
 
   .s-title {
-    font-size: clamp(3rem, 11vw, 5rem);
+    font-size: clamp(3.4rem, 13vw, 5.2rem);
     line-height: 0.9;
   }
 
   .s-headline,
   .hero-copy h1 {
-    font-size: clamp(3rem, 11vw, 5rem);
+    font-size: clamp(3.4rem, 13vw, 5.2rem);
     line-height: 0.9;
     margin: 18px 0 14px;
   }
 
   .s-desc {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.55;
   }
 
   .hero-copy p {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.55;
     max-width: 100%;
   }
 
@@ -809,51 +816,50 @@ ins.adsbygoogle:not([data-ad-status]) {
 
   .s-visual {
     flex: 0 0 auto;
+    order: 2;
+    position: relative;
     width: 100%;
-    height: 360px;
-    display: flex !important;
+    min-height: 390px;
+    height: 390px;
+    display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    order: 1;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .hero-visual {
     flex: 0 0 auto;
+    order: 2;
+    position: relative;
     width: 100%;
-    height: 360px;
-    min-height: 360px;
-    display: flex !important;
+    min-height: 390px;
+    height: 390px;
+    display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    order: 1;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .s-photo {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: clamp(230px, 68vw, 310px) !important;
-    height: clamp(280px, 78vw, 370px) !important;
+    width: clamp(280px, 78vw, 360px) !important;
+    height: clamp(330px, 88vw, 430px) !important;
     object-fit: cover;
-    border-radius: 50% 50% 46% 46% / 58% 58% 42% 42%;
+    margin: 0 auto;
+    border-radius: 42% 58% 52% 48% / 50% 44% 56% 50% !important;
   }
 
   .blob-photo {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    width: clamp(230px, 68vw, 310px) !important;
-    height: clamp(280px, 78vw, 370px) !important;
+    width: clamp(280px, 78vw, 360px) !important;
+    height: clamp(330px, 88vw, 430px) !important;
     object-fit: cover;
-    border-radius: 50% 50% 46% 46% / 58% 58% 42% 42% !important;
+    margin: 0 auto;
+    border-radius: 42% 58% 52% 48% / 50% 44% 56% 50% !important;
   }
 
   .photo-blob {
@@ -862,13 +868,17 @@ ins.adsbygoogle:not([data-ad-status]) {
   }
 
   .s-leaf {
-    font-size: 80px;
-    transform: translateX(-50px) rotate(-12deg);
+    font-size: 70px;
+    right: 5%;
+    top: 8%;
+    z-index: 5;
   }
 
   .leaf {
-    font-size: 80px;
-    transform: translateX(-50px) rotate(-12deg);
+    font-size: 70px;
+    right: 5%;
+    top: 8%;
+    z-index: 5;
   }
 
   .s-fruits {
@@ -877,58 +887,54 @@ ins.adsbygoogle:not([data-ad-status]) {
   }
 
   .fruit.one {
-    right: 10px;
-    bottom: 0;
+    right: 8%;
+    bottom: 18%;
   }
 
   .s-fruit1 { font-size: 36px; }
   .s-fruit2 { font-size: 26px; }
 
   .fruit.one { font-size: 36px; }
-  .fruit.two { font-size: 26px; }
+  .fruit.two { left: 8%; bottom: 14%; font-size: 26px; }
 
   .cal-circle {
-    width: 50px;
-    height: 50px;
-    top: 10px;
-    right: 10px;
+    width: 68px;
+    height: 68px;
+    font-size: 18px;
+    right: 4%;
+    top: 38%;
+    z-index: 6;
   }
 
   .cal-badge {
-    width: 50px;
-    height: 50px;
-    top: 10px;
-    right: 10px;
-  }
-
-  .slider-arrow,
-  .arrow-btn,
-  .h-arrow {
-    display: none;
+    width: 68px;
+    height: 68px;
+    font-size: 18px;
+    right: 4%;
+    top: 38%;
+    z-index: 6;
   }
 
   .ing-pills {
-    display: flex !important;
-    flex-direction: column;
-    gap: 10px;
-    transform: scale(0.82);
-    transform-origin: left center;
+    display: grid !important;
+    position: absolute;
     left: 0;
-    top: 52%;
-    bottom: auto;
-    z-index: 4;
+    top: 22%;
+    gap: 8px;
+    z-index: 6;
+    transform: scale(0.78);
+    transform-origin: left top;
   }
 
   .ingredient-pills {
-    display: flex !important;
-    flex-direction: column;
-    gap: 10px;
-    transform: scale(0.82);
-    transform-origin: left center;
+    display: grid !important;
+    position: absolute;
     left: 0;
-    top: 52%;
-    bottom: auto;
-    z-index: 4;
+    top: 22%;
+    gap: 8px;
+    z-index: 6;
+    transform: scale(0.78);
+    transform-origin: left top;
   }
 
   .ing-pill,
@@ -938,7 +944,7 @@ ins.adsbygoogle:not([data-ad-status]) {
     border-radius: 999px;
     box-shadow: 0 10px 28px rgba(27, 94, 59, .1);
     padding: 8px 12px;
-    min-width: 158px;
+    min-width: 160px;
     max-width: 210px;
     font-size: 12px;
   }
@@ -956,12 +962,32 @@ ins.adsbygoogle:not([data-ad-status]) {
   }
 
   .hero {
-    min-height: 0;
-    height: auto;
+    height: 820px;
+    min-height: 820px;
+    position: relative;
+    overflow: hidden;
   }
 
   .hero-slider {
-    min-height: 0;
-    height: auto;
+    height: 820px;
+    min-height: 820px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 880px;
+    min-height: 880px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 14vw, 4.4rem);
+  }
+
+  .hero-visual {
+    min-height: 380px;
+    height: 380px;
   }
 }
