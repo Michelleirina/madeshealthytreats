@@ -511,6 +511,50 @@ h3 { font-size: 28px; }
 .green-cta h2 { color: #fff; }
 .green-cta p { color: var(--mint); }
 
+/* Image framing audit
+   Keep editorial hero blobs cropped, but show full food compositions in cards,
+   article bodies, blog covers, recipe posts, flat lays, and logo/founder media. */
+.recipe-media,
+.blog-card .media {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: var(--cream);
+}
+
+.recipe-media img,
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.blog-card .media img {
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.article-hero {
+  background: linear-gradient(135deg, var(--mint-pale), var(--cream));
+}
+
+.article-hero img {
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.article-featured-img,
+.article-inline-img,
+.featured-post img {
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.founder-photo {
+  object-fit: contain;
+  background: var(--cream);
+}
+
 /* Footer */
 .footer { background: var(--pink); border-top: 3px solid #F9B8C4; padding: 62px 0 24px; position: relative; overflow: hidden; }
 .footer::before, .footer::after {
@@ -1003,4 +1047,37 @@ ins.adsbygoogle:not([data-ad-status]) {
     min-height: 315px;
     height: 315px;
   }
+}
+
+/* Final image framing overrides for full-composition food photography. */
+.recipe-media,
+.blog-card .media {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: var(--cream);
+}
+
+.recipe-media img,
+.blog-card .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.article-hero {
+  background: linear-gradient(135deg, var(--mint-pale), var(--cream));
+}
+
+.article-hero img {
+  object-fit: contain;
+  background: var(--cream);
+}
+
+.article-featured-img,
+.article-inline-img,
+.featured-post img,
+.founder-photo {
+  object-fit: contain;
+  background: var(--cream);
 }
