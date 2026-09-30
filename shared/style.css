@@ -1462,3 +1462,19 @@ ins.adsbygoogle:not([data-ad-status]) {
     color: var(--green-mid);
   }
 }
+
+.recipe-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:12px; }
+.action-status { font-size:14px; min-height:1.5em; margin-bottom:14px; }
+.saved-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+.saved-grid h2 { font-size:24px; margin-bottom:20px; }
+.article-contents { background:#E8FAF5; padding:20px 24px; border-radius:12px; margin-bottom:28px; font-size:16px; }
+.article-contents ul { padding-left:20px; margin-top:10px; }
+.article-contents a { text-decoration:underline; text-underline-offset:3px; }
+#recipe-ingredients, .article-main h2 { scroll-margin-top:110px; }
+@media print {
+  .navbar,.footer,.recipe-actions,.action-status,.recipe-sidebar,.adsense-slot,.recipe-story ~ section { display:none !important; }
+  .reveal { opacity:1 !important; transform:none !important; }
+  .recipe-post-grid { display:block; }
+  .recipe-post { box-shadow:none; border:0; padding:0; }
+  .recipe-post .article-featured-img { max-height:180px; width:auto; }
+}
