@@ -10,3 +10,28 @@
 
 [build]
   publish = "."
+
+# Retire duplicate example pages while preserving old links.
+[[redirects]]
+  from = "/recipe-single"
+  to = "/recipe-green-detox.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-single.html"
+  to = "/recipe-green-detox.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-post"
+  to = "/blog-ginger.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-post.html"
+  to = "/blog-ginger.html"
+  status = 301
+  force = true
