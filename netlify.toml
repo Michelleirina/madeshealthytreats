@@ -35,3 +35,75 @@
   to = "/blog-ginger.html"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog-green-smoothie-every-day.html"
+  to = "/blog-30-days-green-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-green-smoothie-every-day"
+  to = "/blog-30-days-green-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-a-day-weight-loss.html"
+  to = "/blog-fat-burning-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-a-day-weight-loss"
+  to = "/blog-fat-burning-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-detox-juice.html"
+  to = "/blog-do-juice-cleanses-work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-detox-juice"
+  to = "/blog-do-juice-cleanses-work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-juices-good-for-liver.html"
+  to = "/blog-do-juice-cleanses-work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-juices-good-for-liver"
+  to = "/blog-do-juice-cleanses-work.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-morning-vs-evening.html"
+  to = "/blog-30-days-green-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-morning-vs-evening"
+  to = "/blog-30-days-green-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-meal-replacement.html"
+  to = "/blog-high-protein-smoothie.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-meal-replacement"
+  to = "/blog-high-protein-smoothie.html"
+  status = 301
+  force = true
