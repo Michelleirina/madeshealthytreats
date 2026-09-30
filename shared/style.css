@@ -252,12 +252,12 @@ h3 { font-size: 28px; }
   gap: 42px;
 }
 .hero-copy { position: relative; z-index: 2; }
-.hero-copy h1 {
+.hero-copy :is(h1,h2) {
   margin: 24px 0 18px;
   text-transform: lowercase;
   color: var(--slide-text, var(--green));
 }
-.hero-copy h1 span { display: block; }
+.hero-copy :is(h1,h2) span { display: block; }
 .hero-copy p { max-width: 530px; color: var(--slide-text, var(--green)); font-size: 18px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
 .hero-visual { position: relative; min-height: 470px; }
@@ -829,7 +829,7 @@ ins.adsbygoogle:not([data-ad-status]) {
   }
 
   .s-headline,
-  .hero-copy h1 {
+  .hero-copy :is(h1,h2) {
     font-size: clamp(2.8rem, 11vw, 4.2rem);
     line-height: 0.88;
     margin: 12px 0 10px;
@@ -1034,7 +1034,7 @@ ins.adsbygoogle:not([data-ad-status]) {
     min-height: 740px;
   }
 
-  .hero-copy h1 {
+  .hero-copy :is(h1,h2) {
     font-size: clamp(3rem, 14vw, 4.4rem);
   }
 
