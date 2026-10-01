@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
           ? "coming-soon.html"
           : current;
   document.querySelectorAll(".nav-link").forEach((link) => {
-    const href = link.getAttribute("href");
+    const rawHref = (link.getAttribute("href") || "").split("#")[0].split("?")[0].split("/").pop() || "index.html";
+    const href = rawHref.includes(".") ? rawHref : `${rawHref}.html`;
     if (href === activeTarget || (current === "" && href === "index.html")) {
       link.classList.add("active");
     }
