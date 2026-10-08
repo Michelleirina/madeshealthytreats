@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const current = pathName.includes(".") ? pathName : `${pathName}.html`;
   const juiceRecipePages = new Set([
     "recipe-celery-detox-juice.html",
+    "recipe-tamarind-ginger-cooler.html",
     "recipe-carrot-ginger-juice.html",
     "recipe-beet-energy-juice.html",
     "recipe-cucumber-mint-juice.html",
