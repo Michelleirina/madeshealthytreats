@@ -129,3 +129,7 @@
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation:none !important; transition:none !important; } .reveal,.ingredient-row { opacity:1 !important; transform:none !important; } }
 @media print { .scrapbook { background:white; } .scrapbook main,.scrapbook .recipe-story,.tea-recipe-hero { background:white; } .tea-recipe-hero .scrap-photo,.scrapbook .recipe-sidebar,.tea-collection { display:none; } .tea-hero-grid { display:block; } .scrapbook .recipe-post { border:0; box-shadow:none; } .sticker-ingredients { display:block; } .sticker-ingredients li { min-height:0; display:block; text-align:left; background:white !important; border:0 !important; padding:4px !important; } .sticker-ingredients img,.ingredient-mark { display:none !important; } .scrapbook .step-card { break-inside:avoid; background:white; } details p { display:block; } }
+
+.drink-card .recipe-media {height:auto;aspect-ratio:3/2;}
+.drink-card .recipe-media img {width:100%;height:100%;object-fit:cover;}
+.recipe-byline {font-size:14px;color:#5b5b46;}
