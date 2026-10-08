@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+ const hero=document.querySelector('.bright-hero'); if(!hero)return;
+ const slides=[...hero.querySelectorAll('.bright-slide')], dots=[...hero.querySelectorAll('.bright-dot')], pause=hero.querySelector('.bright-pause'), status=hero.querySelector('.bright-status');
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');let index=0, paused=motion.matches, hovering=false, inView=true, timer;
+ function schedule(){clearTimeout(timer);if(!paused&&!hovering&&!hero.contains(document.activeElement)&&!document.hidden&&inView)timer=setTimeout(()=>show(index+1),6500);}
+ function show(n,manual=false){index=(n+slides.length)%slides.length;slides.forEach((s,i)=>{s.classList.toggle('active',i===index);s.inert=i!==index;s.setAttribute('aria-hidden',String(i!==index));});dots.forEach((d,i)=>{d.classList.toggle('active',i===index);d.setAttribute('aria-current',String(i===index));});if(manual)status.textContent=slides[index].getAttribute('aria-label');schedule();}
+ function syncPause(){pause.textContent=paused?'Play ▶':'Pause ⏸';pause.setAttribute('aria-label',paused?'Play recipe slideshow':'Pause recipe slideshow');schedule();}
+ hero.querySelector('.bright-prev').addEventListener('click',()=>show(index-1,true));hero.querySelector('.bright-next').addEventListener('click',()=>show(index+1,true));dots.forEach((d,i)=>d.addEventListener('click',()=>show(i,true)));pause.addEventListener('click',()=>{paused=!paused;syncPause();});
+ hero.addEventListener('mouseenter',()=>{hovering=true;schedule();});hero.addEventListener('mouseleave',()=>{hovering=false;schedule();});hero.addEventListener('focusin',schedule);hero.addEventListener('focusout',()=>setTimeout(schedule,0));hero.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();show(index+(e.key==='ArrowRight'?1:-1),true);}});document.addEventListener('visibilitychange',schedule);motion.addEventListener('change',()=>{paused=motion.matches;syncPause();});new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;schedule();},{threshold:.15}).observe(hero);show(0);syncPause();
+});
