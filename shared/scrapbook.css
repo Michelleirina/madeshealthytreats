@@ -133,3 +133,31 @@
 .drink-card .recipe-media {height:auto;aspect-ratio:3/2;}
 .drink-card .recipe-media img {width:100%;height:100%;object-fit:cover;}
 .recipe-byline {font-size:14px;color:#5b5b46;}
+
+/* Approved illustrated wordmark, with a generous homepage masthead. */
+.scrapbook .illustrated-brand {display:block;flex-shrink:0;line-height:0;}
+.scrapbook .brand-logo {display:block;width:340px;height:auto;max-width:100%;object-fit:contain;}
+.scrapbook .navbar {height:auto;min-height:110px;gap:22px;flex-wrap:nowrap;}
+.scrapbook .brand-home {position:relative;flex-direction:column;gap:14px;padding:22px 24px 16px;background:linear-gradient(120deg,#fffaf0,#fff6d9 50%,#f4f9e5);border-bottom:3px solid #ebbd6555;}
+.scrapbook .brand-home .brand-logo {width:620px;}
+.scrapbook .brand-home .nav-links {justify-content:center;flex-wrap:wrap;}
+@media (min-width:901px) and (max-width:1250px) {
+.scrapbook .navbar:not(.brand-home) .brand-logo {width:285px;}
+.scrapbook .navbar:not(.brand-home) .nav-links {gap:10px;}
+.scrapbook .navbar:not(.brand-home) .nav-cta {display:none;}
+}
+@media (max-width:900px) {
+.scrapbook .navbar {padding:14px 20px;min-height:100px;}
+.scrapbook .brand-logo {width:330px;}
+.scrapbook .illustrated-brand {max-width:calc(100% - 52px);}
+.scrapbook .brand-home {flex-direction:row;justify-content:space-between;gap:12px;padding:18px 20px;}
+.scrapbook .brand-home .brand-logo {width:520px;}
+.scrapbook .brand-home .nav-links.open {align-items:stretch;flex-wrap:nowrap;z-index:101;}
+.scrapbook .brand-home .nav-link {text-align:center;padding:12px;}
+}
+@media (max-width:480px) {
+.scrapbook .navbar {padding:12px;gap:10px;}
+.scrapbook .brand-home {padding:18px 12px;min-height:122px;}
+.scrapbook .brand-home .illustrated-brand {max-width:calc(100% - 42px);}
+.scrapbook .brand-home .brand-logo {width:100%;}
+}
