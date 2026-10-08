@@ -1,0 +1,131 @@
+/* A botanical scrapbook: quiet reading surfaces, rich color, collected details. */
+.scrapbook { --paper:#f4f8d9; --accent:#23593d; --note:#fff0b0; --second:#f9ddd7; background:var(--paper); color:#30362e; }
+.scrapbook.chamomile { --paper:#fff4c9; --accent:#65502a; --note:#e7def5; --second:#e7efd2; }
+.scrapbook.hibiscus { --paper:#fce0e7; --accent:#792944; --note:#ffebbb; --second:#e9def5; }
+.scrapbook main { background-image:radial-gradient(#71503212 .7px,transparent .7px); background-size:9px 9px; }
+.scrapbook .navbar { background:#fffaf0; border-bottom:1px solid #37503524; }
+.scrapbook .nav-links { gap:16px; }
+.scrapbook .nav-link { font-size:14px; }
+.scrapbook .nav-link.active { color:#254e39; background:#f5df85; padding:7px 10px; border-radius:8px 12px 8px 13px; }
+.scrapbook h1,.scrapbook h2,.scrapbook h3 { color:var(--accent); }
+.scrapbook .eyebrow,.scrapbook .read-more { color:#315f43; }
+.scrapbook .btn-teal { background:#26674c; }
+.scrapbook .lead { color:#454b3f; }
+.scrapbook .section { padding:68px 0; }
+.scrapbook .recipes-section,.scrapbook .recipe-story { background:transparent; }
+.scrapbook .blog-section { background:#e7e0f2; }
+.scrapbook #juice-preview { background:#ffebbd; }
+.scrapbook #shots-preview { background:#f8d9d0; }
+.scrapbook .featured { background:#deecd2; }
+.scrapbook .newsletter { background:#f6d7e0; }
+.scrapbook .recipe-card,.scrapbook .blog-card { border:1px solid #55483122; border-radius:18px 9px 20px 10px; background:#fffaf0; box-shadow:4px 7px 0 #59462910; }
+.scrapbook .card-body { background:#fffaf0; }
+.scrapbook .recipe-card:nth-child(3n+2) .card-body,.scrapbook .blog-card:nth-child(3n+2) .card-body { background:#f7ebcf; }
+.scrapbook .recipe-card:nth-child(3n) .card-body,.scrapbook .blog-card:nth-child(3n) .card-body { background:#eaf0d7; }
+.scrapbook .recipe-card:hover,.scrapbook .blog-card:hover { transform:translateY(-4px); box-shadow:5px 10px 0 #59462915; }
+.scrapbook .info-card { border:1px solid #66573725; background:#fff4c9; border-radius:14px 7px 16px 8px; }
+.scrapbook .info-card:nth-child(2) { background:#f6dce4; }
+.scrapbook .info-card:nth-child(3) { background:#e7def5; }
+.scrapbook .recipe-post { background:#fffaf0; border-radius:22px 10px 24px 12px; border:1px solid #6d573225; box-shadow:7px 9px 0 #5a452b10; }
+.scrapbook .recipe-post h2 { font-size:clamp(27px,3.3vw,38px); line-height:1.16; margin-bottom:16px; }
+.scrapbook .recipe-post p { line-height:1.8; }
+.scrapbook .recipe-post a:not(.btn) { text-decoration:underline; text-underline-offset:3px; }
+.scrapbook .step-card { background:var(--note); border:1px dashed #71603c40; border-radius:12px; margin:16px 0; padding:20px; align-items:flex-start; }
+.scrapbook .step-card:nth-of-type(even) { background:var(--second); }
+.scrapbook .step-num { flex-shrink:0; background:var(--accent); color:#fff; }
+.scrapbook .styled-list li { background:#e9efd8; color:#2c4734; border:1px solid #4f674327; }
+.scrapbook .styled-list li:nth-child(even) { background:#ffebbc; }
+.scrapbook .single-hero,.scrapbook .page-hero { background:var(--paper) !important; }
+.scrapbook .article-contents { background:#fff0b0; }
+.scrapbook .article-main { background:#fffaf0; padding:30px; border-radius:18px; }
+.scrapbook .footer { background:#244a37; color:#fff6df; }
+.scrapbook .footer :is(p,a,h4,.footer-brand,.footer-bottom) { color:#fff6df; }
+.scrapbook .footer .socials a { background:#fff6df; color:#244a37; }
+.scrapbook .soft-badge { background:#fffaf0; color:var(--accent); border:1px solid #61503230; }
+.scrapbook .goal-badge { color:#314a34; background:#fff0b0; }
+.scrapbook .filter-btn { color:#294b37; background:#fffaf0; }
+.scrapbook .filter-btn.active { background:#29573e; color:white; }
+.scrapbook-welcome { padding:88px 0 78px; background:#f4ecc9; overflow:hidden; }
+.tea-hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:62px; align-items:center; }
+.welcome-copy h1 { font-size:clamp(40px,4.5vw,65px); line-height:1.08; margin:25px 0; letter-spacing:-1.5px; color:#274d38; }
+.welcome-copy h1 em { color:#943c58; }
+.welcome-copy .lead { font-size:18px; max-width:460px; }
+.welcome-footnote { font-family:var(--font-heading); font-style:italic; color:#624e35; margin-top:28px; }
+.scrap-label { display:inline-block; background:#f9cd67; color:#44351e; padding:8px 15px; font-size:12px; font-weight:800; letter-spacing:1px; transform:rotate(-2deg); border-radius:4px; }
+.welcome-collage { position:relative; padding:28px 16px 44px; }
+.scrap-photo { margin:0; background:#fffaf0; padding:12px 12px 18px; box-shadow:4px 8px 0 #4d3d2818,0 20px 40px #44382314; transform:rotate(3deg); position:relative; border-radius:5px; }
+.scrap-photo::before { content:""; position:absolute; width:110px; height:28px; background:#dec394b0; top:-13px; left:calc(50% - 55px); transform:rotate(-7deg); z-index:1; }
+.scrap-photo img { width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border-radius:2px; }
+.scrap-photo figcaption { font-family:var(--font-heading); font-style:italic; padding:14px 8px 0; color:#644c36; font-size:16px; text-align:center; }
+.collage-sticker { position:absolute; width:155px; height:130px; object-fit:contain; filter:drop-shadow(3px 7px 3px #25472d20); pointer-events:none; }
+.mint-sticker { top:-8px; right:-16px; transform:rotate(-18deg); }
+.lemon-sticker { bottom:28px; left:-34px; transform:rotate(12deg); }
+.collage-label { position:absolute; right:0; bottom:10px; background:#e5d9ee; color:#5a3f66; padding:9px 14px; transform:rotate(-4deg); font-size:13px; font-weight:700; border-radius:3px; }
+.tea-corner-hero { padding:70px 0 52px; background:#f4ecc9; text-align:center; }
+.tea-corner-hero h1 { font-size:clamp(48px,7vw,88px); line-height:1.05; margin:26px 0 20px; color:#294d36; }
+.tea-corner-hero h1 em { color:#973952; }
+.tea-corner-hero .lead { margin:0 auto; }
+.botanical-stickers { display:flex; justify-content:center; align-items:center; gap:28px; padding:20px 0; }
+.botanical-stickers img { width:140px; height:115px; object-fit:contain; filter:drop-shadow(3px 6px 3px #3c47241b); transform:rotate(-9deg); }
+.botanical-stickers img:nth-child(even) { transform:rotate(9deg); }
+.tea-collection { background:#e7efd7; }
+.tea-collection .section-head { text-align:center; }
+.tea-collection .section-head .lead { margin-left:auto; margin-right:auto; }
+.tea-collection .section-head h2 { margin-top:18px; line-height:1.15; }
+.tea-card.mint .card-body { background:#e4edcc; }
+.tea-card.chamomile .card-body { background:#fff0b5; }
+.tea-card.hibiscus .card-body { background:#f6d4df; }
+.tea-card h3 { font-size:29px; line-height:1.16; margin:12px 0; }
+.tea-card .recipe-media { height:auto; aspect-ratio:3/2; }
+.tea-card .recipe-media img { width:100%; height:100%; object-fit:cover; }
+.tea-card .eyebrow { font-size:10px; }
+.tea-brew-notes { background:#f6dce4; }
+.tea-recipe-hero { padding:70px 0; background:var(--paper); overflow:hidden; }
+.tea-recipe-hero h1 { font-size:clamp(40px,5vw,65px); line-height:1.07; margin:20px 0; }
+.tea-recipe-hero .lead { font-size:18px; }
+.tea-recipe-hero .btn { margin-top:18px; }
+.sticker-ingredients { grid-template-columns:1fr 1fr; gap:16px; margin:24px 0; }
+.sticker-ingredients li { display:flex; align-items:center; flex-direction:column; text-align:center; padding:16px 18px 22px !important; min-height:210px; border-radius:16px !important; }
+.sticker-ingredients li img { width:150px; height:110px; object-fit:contain; margin-bottom:12px; transform:rotate(-6deg); filter:drop-shadow(2px 4px 2px #39492218); }
+.sticker-ingredients li:nth-child(even) img { transform:rotate(7deg); }
+.sticker-ingredients li span { font-size:16px; line-height:1.5; }
+.ingredient-mark { display:grid; place-items:center; height:110px; color:#88753c; font-size:42px !important; }
+.legacy-stickers li { display:flex; align-items:center; gap:16px; }
+.legacy-stickers img { width:74px; height:65px; object-fit:contain; flex-shrink:0; transform:rotate(-8deg); }
+.scrapbook-note { transform:rotate(-2deg); position:relative; padding-top:34px; }
+.scrapbook-note::before { content:""; width:70px; height:20px; position:absolute; left:calc(50% - 35px); top:-9px; background:#d9bd8ba8; transform:rotate(8deg); }
+.reading-note { max-width:760px; text-align:center; }
+.reading-note h2 { margin:16px 0 24px; }
+.reading-note p { font-size:18px; }
+.scrapbook details { padding:18px; background:var(--note); border-radius:10px; margin:12px 0; }
+.scrapbook summary { cursor:pointer; font-weight:700; }
+.recipe-source-note { font-size:14px; border-top:1px dashed #68543150; padding-top:20px; margin-top:28px; }
+.scrapbook :focus-visible { outline:3px solid #8d3458; outline-offset:5px; }
+@media (max-width:1150px) { .scrapbook .nav-links { gap:10px; } .scrapbook .nav-cta { display:none; } }
+@media (max-width:900px) { .scrapbook .nav-hamburger { display:block; } .scrapbook .nav-links { display:none; } .scrapbook .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; left:0; right:0; padding:20px; background:#fffaf0; box-shadow:0 15px 20px #33442218; } .tea-hero-grid { gap:35px; } }
+@media (max-width:760px) {
+ .tea-hero-grid { grid-template-columns:1fr; gap:34px; }
+ .scrapbook-welcome { padding:44px 0 42px; }
+ .welcome-copy h1 { font-size:43px; letter-spacing:-1px; }
+ .welcome-collage { padding:18px 12px 35px; max-width:510px; width:100%; margin:auto; }
+ .mint-sticker { right:0; width:118px; top:-8px; }
+ .lemon-sticker { left:0; width:110px; bottom:20px; }
+ .collage-label { font-size:11px; }
+ .scrapbook .section { padding:44px 0; }
+ .tea-recipe-hero { padding:40px 0; }
+ .tea-recipe-hero .scrap-photo { margin:0 8px; transform:rotate(2deg); }
+ .scrapbook .recipe-post { padding:22px 18px; }
+ .sticker-ingredients { gap:10px; }
+ .sticker-ingredients li { min-height:185px; padding:12px 9px 16px !important; }
+ .sticker-ingredients li img { width:115px; height:90px; }
+ .sticker-ingredients li span { font-size:14px; }
+ .ingredient-mark { height:90px; }
+ .botanical-stickers { gap:5px; }
+ .botanical-stickers img { width:23%; height:90px; }
+ .scrapbook .article-main { padding:24px 16px; }
+ .tea-corner-hero { padding:42px 0; }
+ .scrapbook .recipe-post-grid { grid-template-columns:1fr; }
+ .scrapbook .recipe-sidebar { position:static; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation:none !important; transition:none !important; } .reveal,.ingredient-row { opacity:1 !important; transform:none !important; } }
+@media print { .scrapbook { background:white; } .scrapbook main,.scrapbook .recipe-story,.tea-recipe-hero { background:white; } .tea-recipe-hero .scrap-photo,.scrapbook .recipe-sidebar,.tea-collection { display:none; } .tea-hero-grid { display:block; } .scrapbook .recipe-post { border:0; box-shadow:none; } .sticker-ingredients { display:block; } .sticker-ingredients li { min-height:0; display:block; text-align:left; background:white !important; border:0 !important; padding:4px !important; } .sticker-ingredients img,.ingredient-mark { display:none !important; } .scrapbook .step-card { break-inside:avoid; background:white; } details p { display:block; } }

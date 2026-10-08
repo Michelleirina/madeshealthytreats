@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "recipe-wheatgrass-energy-shot.html",
     "recipe-beet-performance-shot.html"
   ]);
-  const activeTarget = current === "shots.html" || shotRecipePages.has(current)
+  const activeTarget = current === "teas.html" || ["recipe-fresh-mint-tea.html", "recipe-chamomile-lemon-tea.html", "recipe-hibiscus-ginger-tea.html"].includes(current)
+    ? "teas.html"
+    : current === "shots.html" || shotRecipePages.has(current)
     ? "shots.html"
     : current === "juices.html" || juiceRecipePages.has(current)
       ? "juices.html"

@@ -107,3 +107,17 @@
   to = "/blog-high-protein-smoothie.html"
   status = 301
   force = true
+
+# The former shop placeholder is now the herbal tea collection.
+
+[[redirects]]
+  from = "/coming-soon"
+  to = "/teas.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coming-soon.html"
+  to = "/teas.html"
+  status = 301
+  force = true
