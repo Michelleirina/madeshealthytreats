@@ -14,97 +14,97 @@
 # Retire duplicate example pages while preserving old links.
 [[redirects]]
   from = "/recipe-single"
-  to = "/recipe-green-detox.html"
+  to = "/recipe-green-detox"
   status = 301
   force = true
 
 [[redirects]]
   from = "/recipe-single.html"
-  to = "/recipe-green-detox.html"
+  to = "/recipe-green-detox"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-post"
-  to = "/blog-ginger.html"
+  to = "/blog-ginger"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-post.html"
-  to = "/blog-ginger.html"
+  to = "/blog-ginger"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-green-smoothie-every-day.html"
-  to = "/blog-30-days-green-smoothie.html"
+  to = "/blog-30-days-green-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-green-smoothie-every-day"
-  to = "/blog-30-days-green-smoothie.html"
+  to = "/blog-30-days-green-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-smoothie-a-day-weight-loss.html"
-  to = "/blog-fat-burning-smoothie.html"
+  to = "/blog-fat-burning-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-smoothie-a-day-weight-loss"
-  to = "/blog-fat-burning-smoothie.html"
+  to = "/blog-fat-burning-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-detox-juice.html"
-  to = "/blog-do-juice-cleanses-work.html"
+  to = "/blog-do-juice-cleanses-work"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-detox-juice"
-  to = "/blog-do-juice-cleanses-work.html"
+  to = "/blog-do-juice-cleanses-work"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-juices-good-for-liver.html"
-  to = "/blog-do-juice-cleanses-work.html"
+  to = "/blog-do-juice-cleanses-work"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-juices-good-for-liver"
-  to = "/blog-do-juice-cleanses-work.html"
+  to = "/blog-do-juice-cleanses-work"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-morning-vs-evening.html"
-  to = "/blog-30-days-green-smoothie.html"
+  to = "/blog-30-days-green-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-morning-vs-evening"
-  to = "/blog-30-days-green-smoothie.html"
+  to = "/blog-30-days-green-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-smoothie-meal-replacement.html"
-  to = "/blog-high-protein-smoothie.html"
+  to = "/blog-high-protein-smoothie"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog-smoothie-meal-replacement"
-  to = "/blog-high-protein-smoothie.html"
+  to = "/blog-high-protein-smoothie"
   status = 301
   force = true
 
@@ -112,12 +112,640 @@
 
 [[redirects]]
   from = "/coming-soon"
-  to = "/teas.html"
+  to = "/teas"
   status = 301
   force = true
 
 [[redirects]]
   from = "/coming-soon.html"
-  to = "/teas.html"
+  to = "/teas"
   status = 301
   force = true
+
+# Clean public URLs; source files remain HTML.
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-30-days-green-smoothie.html"
+  to = "/blog-30-days-green-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-30-days-green-smoothie"
+  to = "/blog-30-days-green-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-beet-juice-benefits.html"
+  to = "/blog-beet-juice-benefits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-beet-juice-benefits"
+  to = "/blog-beet-juice-benefits.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-best-morning-juice.html"
+  to = "/blog-best-morning-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-best-morning-juice"
+  to = "/blog-best-morning-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-budget-smoothie-shopping-list.html"
+  to = "/blog-budget-smoothie-shopping-list"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-budget-smoothie-shopping-list"
+  to = "/blog-budget-smoothie-shopping-list.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-celery-juice.html"
+  to = "/blog-celery-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-celery-juice"
+  to = "/blog-celery-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-dairy-free-smoothies.html"
+  to = "/blog-dairy-free-smoothies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-dairy-free-smoothies"
+  to = "/blog-dairy-free-smoothies.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-do-juice-cleanses-work.html"
+  to = "/blog-do-juice-cleanses-work"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-do-juice-cleanses-work"
+  to = "/blog-do-juice-cleanses-work.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-fat-burning-smoothie.html"
+  to = "/blog-fat-burning-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-fat-burning-smoothie"
+  to = "/blog-fat-burning-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-ginger-shots-at-home.html"
+  to = "/blog-ginger-shots-at-home"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-ginger-shots-at-home"
+  to = "/blog-ginger-shots-at-home.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-ginger.html"
+  to = "/blog-ginger"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-ginger"
+  to = "/blog-ginger.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-high-protein-smoothie.html"
+  to = "/blog-high-protein-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-high-protein-smoothie"
+  to = "/blog-high-protein-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-juice-without-juicer.html"
+  to = "/blog-juice-without-juicer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-juice-without-juicer"
+  to = "/blog-juice-without-juicer.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-probiotics.html"
+  to = "/blog-probiotics"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-probiotics"
+  to = "/blog-probiotics.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-smoothie-meal-prep.html"
+  to = "/blog-smoothie-meal-prep"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-meal-prep"
+  to = "/blog-smoothie-meal-prep.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-smoothie-mistakes.html"
+  to = "/blog-smoothie-mistakes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-mistakes"
+  to = "/blog-smoothie-mistakes.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-smoothie-vs-juicing.html"
+  to = "/blog-smoothie-vs-juicing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothie-vs-juicing"
+  to = "/blog-smoothie-vs-juicing.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-smoothies-without-banana.html"
+  to = "/blog-smoothies-without-banana"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-smoothies-without-banana"
+  to = "/blog-smoothies-without-banana.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-superfoods.html"
+  to = "/blog-superfoods"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-superfoods"
+  to = "/blog-superfoods.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog-wellness-shot-benefits.html"
+  to = "/blog-wellness-shot-benefits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog-wellness-shot-benefits"
+  to = "/blog-wellness-shot-benefits.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/editorial.html"
+  to = "/editorial"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/editorial"
+  to = "/editorial.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/juices.html"
+  to = "/juices"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/juices"
+  to = "/juices.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy.html"
+  to = "/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-acv-detox-shot.html"
+  to = "/recipe-acv-detox-shot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-acv-detox-shot"
+  to = "/recipe-acv-detox-shot.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-beet-energy-juice.html"
+  to = "/recipe-beet-energy-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-beet-energy-juice"
+  to = "/recipe-beet-energy-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-beet-performance-shot.html"
+  to = "/recipe-beet-performance-shot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-beet-performance-shot"
+  to = "/recipe-beet-performance-shot.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-berry-probiotic.html"
+  to = "/recipe-berry-probiotic"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-berry-probiotic"
+  to = "/recipe-berry-probiotic.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-carrot-ginger-juice.html"
+  to = "/recipe-carrot-ginger-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-carrot-ginger-juice"
+  to = "/recipe-carrot-ginger-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-celery-detox-juice.html"
+  to = "/recipe-celery-detox-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-celery-detox-juice"
+  to = "/recipe-celery-detox-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-chamomile-lemon-tea.html"
+  to = "/recipe-chamomile-lemon-tea"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-chamomile-lemon-tea"
+  to = "/recipe-chamomile-lemon-tea.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-citrus-immunity.html"
+  to = "/recipe-citrus-immunity"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-citrus-immunity"
+  to = "/recipe-citrus-immunity.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-cucumber-mint-juice.html"
+  to = "/recipe-cucumber-mint-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-cucumber-mint-juice"
+  to = "/recipe-cucumber-mint-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-fresh-mint-tea.html"
+  to = "/recipe-fresh-mint-tea"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-fresh-mint-tea"
+  to = "/recipe-fresh-mint-tea.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-ginger-immunity-shot.html"
+  to = "/recipe-ginger-immunity-shot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-ginger-immunity-shot"
+  to = "/recipe-ginger-immunity-shot.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-golden-glow.html"
+  to = "/recipe-golden-glow"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-golden-glow"
+  to = "/recipe-golden-glow.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-green-detox.html"
+  to = "/recipe-green-detox"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-green-detox"
+  to = "/recipe-green-detox.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-guava-strawberry-smoothie.html"
+  to = "/recipe-guava-strawberry-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-guava-strawberry-smoothie"
+  to = "/recipe-guava-strawberry-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-hibiscus-ginger-tea.html"
+  to = "/recipe-hibiscus-ginger-tea"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-hibiscus-ginger-tea"
+  to = "/recipe-hibiscus-ginger-tea.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-mango-passion-fruit-smoothie.html"
+  to = "/recipe-mango-passion-fruit-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-mango-passion-fruit-smoothie"
+  to = "/recipe-mango-passion-fruit-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-matcha-lean.html"
+  to = "/recipe-matcha-lean"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-matcha-lean"
+  to = "/recipe-matcha-lean.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-papaya-lime-smoothie.html"
+  to = "/recipe-papaya-lime-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-papaya-lime-smoothie"
+  to = "/recipe-papaya-lime-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-peanut-butter-banana.html"
+  to = "/recipe-peanut-butter-banana"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-peanut-butter-banana"
+  to = "/recipe-peanut-butter-banana.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-pineapple-turmeric-juice.html"
+  to = "/recipe-pineapple-turmeric-juice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-pineapple-turmeric-juice"
+  to = "/recipe-pineapple-turmeric-juice.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-pumpkin-oat-smoothie.html"
+  to = "/recipe-pumpkin-oat-smoothie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-pumpkin-oat-smoothie"
+  to = "/recipe-pumpkin-oat-smoothie.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-purple-rain.html"
+  to = "/recipe-purple-rain"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-purple-rain"
+  to = "/recipe-purple-rain.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-tamarind-ginger-cooler.html"
+  to = "/recipe-tamarind-ginger-cooler"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-tamarind-ginger-cooler"
+  to = "/recipe-tamarind-ginger-cooler.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-tropical-power.html"
+  to = "/recipe-tropical-power"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-tropical-power"
+  to = "/recipe-tropical-power.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-turmeric-golden-shot.html"
+  to = "/recipe-turmeric-golden-shot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-turmeric-golden-shot"
+  to = "/recipe-turmeric-golden-shot.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-watermelon-mint.html"
+  to = "/recipe-watermelon-mint"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-watermelon-mint"
+  to = "/recipe-watermelon-mint.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipe-wheatgrass-energy-shot.html"
+  to = "/recipe-wheatgrass-energy-shot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipe-wheatgrass-energy-shot"
+  to = "/recipe-wheatgrass-energy-shot.html"
+  status = 200
+
+[[redirects]]
+  from = "/recipes.html"
+  to = "/recipes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recipes"
+  to = "/recipes.html"
+  status = 200
+
+[[redirects]]
+  from = "/saved.html"
+  to = "/saved"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/saved"
+  to = "/saved.html"
+  status = 200
+
+[[redirects]]
+  from = "/shots.html"
+  to = "/shots"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shots"
+  to = "/shots.html"
+  status = 200
+
+[[redirects]]
+  from = "/teas.html"
+  to = "/teas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/teas"
+  to = "/teas.html"
+  status = 200

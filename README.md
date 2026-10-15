@@ -1,4 +1,4 @@
-# Made's Healthy Treats
+# Madeshealthytreats
 
 Static smoothie recipe website for `madeshealthytreats.com`.
 

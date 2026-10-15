@@ -72,22 +72,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".filter-tabs").forEach((tabGroup) => {
     const scope = tabGroup.dataset.scope || "body";
-    const root = scope === "section" ? tabGroup.closest("section") : document;
+    const root = scope === "page" ? tabGroup.closest("main") : scope === "section" ? tabGroup.closest("section") : document;
     const cards = root.querySelectorAll("[data-cat]");
-
+    const applyFilter = (button) => {
+      const filter = button.dataset.filter;
+      tabGroup.querySelectorAll(".filter-btn").forEach((btn) => {
+        const selected = btn === button;
+        btn.classList.toggle("active", selected);
+        btn.setAttribute("aria-pressed", String(selected));
+      });
+      cards.forEach((card) => {
+        const show = filter === "all" || (card.dataset.cat || "").split(/\s+/).includes(filter);
+        card.classList.toggle("hide", !show);
+        card.hidden = !show;
+      });
+    };
+    const isCollection = location.pathname.replace(/\.html$/, "") === "/recipes";
+    const fromUrl = new URLSearchParams(location.search).get("category") || "all";
+    const initial = [...tabGroup.querySelectorAll(".filter-btn")].find(btn => btn.dataset.filter === fromUrl) || tabGroup.querySelector(".filter-btn");
+    if (initial) applyFilter(initial);
     tabGroup.addEventListener("click", (event) => {
       const button = event.target.closest(".filter-btn");
-      if (!button) return;
-      const filter = button.dataset.filter;
-
-      tabGroup.querySelectorAll(".filter-btn").forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
-
-      cards.forEach((card) => {
-        const categories = (card.dataset.cat || "").split(/\s+/);
-        const show = filter === "all" || categories.includes(filter);
-        card.classList.toggle("hide", !show);
-      });
+      if (!button || !tabGroup.contains(button)) return;
+      applyFilter(button);
+      if (isCollection) {
+        const url = new URL(location.href);
+        if (button.dataset.filter === "all") url.searchParams.delete("category");
+        else url.searchParams.set("category", button.dataset.filter);
+        history.replaceState(null, "", url.pathname + url.search + url.hash);
+      }
     });
   });
 
@@ -99,14 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const readSaved = () => {
     try {
       const data = JSON.parse(localStorage.getItem(storageKey) || "[]");
-      return Array.isArray(data) ? data.filter(item => item && typeof item.title === "string" && /^recipe-[a-z0-9-]+\.html$/.test(item.path)) : [];
+      return Array.isArray(data) ? data.filter(item => item && typeof item.title === "string" && /^\/?recipe-[a-z0-9-]+(?:\.html)?$/.test(item.path)).map(item => ({...item, path: "/" + item.path.replace(/^\//, "").replace(/\.html$/, "")})) : [];
     } catch { return []; }
   };
   const writeSaved = items => localStorage.setItem(storageKey, JSON.stringify(items));
   const recipe = document.querySelector(".recipe-post");
   const heading = document.querySelector("main h1");
   if (recipe && heading) {
-    const path = (location.pathname.split("/").pop() || "").replace(/\.html$/, "") + ".html";
+    const path = "/" + (location.pathname.split("/").pop() || "").replace(/\.html$/, "");
     const toolbar = document.createElement("div");
     toolbar.className = "recipe-actions";
     const save = document.createElement("button");
@@ -136,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
     print.textContent = "Print recipe";
     print.addEventListener("click", () => window.print());
     const collection = document.createElement("a");
-    collection.href = "saved.html";
+    collection.href = "/saved";
     collection.className = "read-more";
     collection.textContent = "My saved recipes →";
     toolbar.append(save, print, collection);
