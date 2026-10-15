@@ -1,0 +1,1327 @@
+{
+  "selectionMethod": "Two highest positive FDA Daily Value fractions per 100 g among the listed vitamins, minerals, protein and fiber. Excludes water, energy, sodium, sugars, total carbohydrate and fats; not an absolute ranking of every compound.",
+  "dailyValueSource": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+  "dailyValueReference": {
+    "Protein": 50,
+    "Fiber, total dietary": 28,
+    "Calcium, Ca": 1300,
+    "Iron, Fe": 18,
+    "Magnesium, Mg": 420,
+    "Phosphorus, P": 1250,
+    "Potassium, K": 4700,
+    "Zinc, Zn": 11,
+    "Copper, Cu": 0.9,
+    "Manganese, Mn": 2.3,
+    "Selenium, Se": 55,
+    "Vitamin C, total ascorbic acid": 90,
+    "Thiamin": 1.2,
+    "Riboflavin": 1.3,
+    "Pantothenic acid": 5,
+    "Vitamin B-6": 1.7,
+    "Folate, DFE": 400,
+    "Vitamin B-12": 2.4,
+    "Vitamin A, RAE": 900,
+    "Vitamin E (alpha-tocopherol)": 15,
+    "Vitamin D (D2 + D3)": 20,
+    "Vitamin K (phylloquinone)": 120,
+    "Choline, total": 550
+  },
+  "recipes": {
+    "wheatgrass-energy-shot": [
+      {
+        "ingredient": "cucumber",
+        "label": "Cucumber",
+        "fdcId": 168409,
+        "description": "Cucumber, with peel, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 16.4
+          },
+          {
+            "nutrientName": "Pantothenic acid",
+            "unitName": "mg",
+            "value": 0.259
+          }
+        ]
+      },
+      {
+        "ingredient": "mint",
+        "label": "Fresh mint leaves",
+        "fdcId": 173475,
+        "description": "Spearmint, fresh",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Iron, Fe",
+            "unitName": "mg",
+            "value": 11.9
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 1.12
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "turmeric-golden-shot": [
+      {
+        "ingredient": "turmeric",
+        "label": "Ground turmeric",
+        "fdcId": 172231,
+        "description": "Spices, turmeric, ground",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 19.8
+          },
+          {
+            "nutrientName": "Iron, Fe",
+            "unitName": "mg",
+            "value": 55.0
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "green-detox": [
+      {
+        "ingredient": "spinach",
+        "label": "Spinach",
+        "fdcId": 168462,
+        "description": "Spinach, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 483
+          },
+          {
+            "nutrientName": "Vitamin A, RAE",
+            "unitName": "\u00b5g",
+            "value": 469
+          }
+        ]
+      },
+      {
+        "ingredient": "banana",
+        "label": "Banana",
+        "fdcId": 173944,
+        "description": "Bananas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-6",
+            "unitName": "mg",
+            "value": 0.367
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.27
+          }
+        ]
+      },
+      {
+        "ingredient": "cucumber",
+        "label": "Cucumber",
+        "fdcId": 168409,
+        "description": "Cucumber, with peel, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 16.4
+          },
+          {
+            "nutrientName": "Pantothenic acid",
+            "unitName": "mg",
+            "value": 0.259
+          }
+        ]
+      }
+    ],
+    "watermelon-mint": [
+      {
+        "ingredient": "watermelon",
+        "label": "Watermelon",
+        "fdcId": 167765,
+        "description": "Watermelon, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 8.1
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.042
+          }
+        ]
+      },
+      {
+        "ingredient": "chia",
+        "label": "Chia seeds",
+        "fdcId": 170554,
+        "description": "Seeds, chia seeds, dried",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 34.4
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 2.72
+          }
+        ]
+      },
+      {
+        "ingredient": "coconut-water",
+        "label": "Coconut water",
+        "fdcId": 170174,
+        "description": "Nuts, coconut water (liquid from coconuts)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.142
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 25.0
+          }
+        ]
+      }
+    ],
+    "papaya-lime-smoothie": [
+      {
+        "ingredient": "papaya",
+        "label": "Papaya",
+        "fdcId": 169926,
+        "description": "Papayas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 60.9
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 37.0
+          }
+        ]
+      },
+      {
+        "ingredient": "yogurt",
+        "label": "Plain dairy yogurt",
+        "fdcId": 171284,
+        "description": "Yogurt, plain, whole milk",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-12",
+            "unitName": "\u00b5g",
+            "value": 0.37
+          },
+          {
+            "nutrientName": "Riboflavin",
+            "unitName": "mg",
+            "value": 0.142
+          }
+        ]
+      },
+      {
+        "ingredient": "lime",
+        "label": "Lime",
+        "fdcId": 168155,
+        "description": "Limes, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 29.1
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.8
+          }
+        ]
+      }
+    ],
+    "peanut-butter-banana": [
+      {
+        "ingredient": "peanut",
+        "label": "Peanut butter",
+        "fdcId": 172470,
+        "description": "Peanut butter, smooth style, without salt",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 1.66
+          },
+          {
+            "nutrientName": "Vitamin E (alpha-tocopherol)",
+            "unitName": "mg",
+            "value": 9.1
+          }
+        ]
+      },
+      {
+        "ingredient": "banana",
+        "label": "Banana",
+        "fdcId": 173944,
+        "description": "Bananas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-6",
+            "unitName": "mg",
+            "value": 0.367
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.27
+          }
+        ]
+      },
+      {
+        "ingredient": "oats",
+        "label": "Rolled oats",
+        "fdcId": 169705,
+        "description": "Oats (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 4.92
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.626
+          }
+        ]
+      }
+    ],
+    "cucumber-mint-juice": [
+      {
+        "ingredient": "cucumber",
+        "label": "Cucumber",
+        "fdcId": 168409,
+        "description": "Cucumber, with peel, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 16.4
+          },
+          {
+            "nutrientName": "Pantothenic acid",
+            "unitName": "mg",
+            "value": 0.259
+          }
+        ]
+      },
+      {
+        "ingredient": "apple",
+        "label": "Apple with its skin",
+        "fdcId": 171688,
+        "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          },
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 4.6
+          }
+        ]
+      },
+      {
+        "ingredient": "mint",
+        "label": "Fresh mint leaves",
+        "fdcId": 173475,
+        "description": "Spearmint, fresh",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Iron, Fe",
+            "unitName": "mg",
+            "value": 11.9
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 1.12
+          }
+        ]
+      }
+    ],
+    "chamomile-lemon-tea": [
+      {
+        "ingredient": "lemon-wedge",
+        "label": "Lemon",
+        "fdcId": 167746,
+        "description": "Lemons, raw, without peel",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 53.0
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.8
+          }
+        ]
+      }
+    ],
+    "matcha-lean": [
+      {
+        "ingredient": "banana",
+        "label": "Banana",
+        "fdcId": 173944,
+        "description": "Bananas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-6",
+            "unitName": "mg",
+            "value": 0.367
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.27
+          }
+        ]
+      },
+      {
+        "ingredient": "chia",
+        "label": "Chia seeds",
+        "fdcId": 170554,
+        "description": "Seeds, chia seeds, dried",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 34.4
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 2.72
+          }
+        ]
+      }
+    ],
+    "celery-detox-juice": [
+      {
+        "ingredient": "celery",
+        "label": "Celery",
+        "fdcId": 169988,
+        "description": "Celery, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 29.3
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 36.0
+          }
+        ]
+      },
+      {
+        "ingredient": "cucumber",
+        "label": "Cucumber",
+        "fdcId": 168409,
+        "description": "Cucumber, with peel, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 16.4
+          },
+          {
+            "nutrientName": "Pantothenic acid",
+            "unitName": "mg",
+            "value": 0.259
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "fresh-mint-tea": [
+      {
+        "ingredient": "mint",
+        "label": "Fresh mint leaves",
+        "fdcId": 173475,
+        "description": "Spearmint, fresh",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Iron, Fe",
+            "unitName": "mg",
+            "value": 11.9
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 1.12
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon-wedge",
+        "label": "Optional lemon",
+        "fdcId": 167746,
+        "description": "Lemons, raw, without peel",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 53.0
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.8
+          }
+        ]
+      }
+    ],
+    "tamarind-ginger-cooler": [
+      {
+        "ingredient": "tamarind",
+        "label": "Tamarind",
+        "fdcId": 167763,
+        "description": "Tamarinds, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Thiamin",
+            "unitName": "mg",
+            "value": 0.428
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 92.0
+          }
+        ]
+      },
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      }
+    ],
+    "golden-glow": [
+      {
+        "ingredient": "papaya",
+        "label": "Papaya",
+        "fdcId": 169926,
+        "description": "Papayas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 60.9
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 37.0
+          }
+        ]
+      },
+      {
+        "ingredient": "carrot",
+        "label": "Carrot",
+        "fdcId": 170393,
+        "description": "Carrots, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin A, RAE",
+            "unitName": "\u00b5g",
+            "value": 835
+          },
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 13.2
+          }
+        ]
+      },
+      {
+        "ingredient": "orange",
+        "label": "Orange",
+        "fdcId": 169097,
+        "description": "Oranges, raw, all commercial varieties",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 53.2
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          }
+        ]
+      }
+    ],
+    "hibiscus-ginger-tea": [
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      }
+    ],
+    "berry-probiotic": [
+      {
+        "ingredient": "strawberry",
+        "label": "Strawberries",
+        "fdcId": 167762,
+        "description": "Strawberries, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 58.8
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.386
+          }
+        ]
+      },
+      {
+        "ingredient": "flax",
+        "label": "Ground flaxseed",
+        "fdcId": 169414,
+        "description": "Seeds, flaxseed",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Thiamin",
+            "unitName": "mg",
+            "value": 1.64
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 1.22
+          }
+        ]
+      },
+      {
+        "ingredient": "oats",
+        "label": "Rolled oats",
+        "fdcId": 169705,
+        "description": "Oats (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 4.92
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.626
+          }
+        ]
+      }
+    ],
+    "carrot-ginger-juice": [
+      {
+        "ingredient": "carrot",
+        "label": "Carrot",
+        "fdcId": 170393,
+        "description": "Carrots, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin A, RAE",
+            "unitName": "\u00b5g",
+            "value": 835
+          },
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 13.2
+          }
+        ]
+      },
+      {
+        "ingredient": "orange",
+        "label": "Orange",
+        "fdcId": 169097,
+        "description": "Oranges, raw, all commercial varieties",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 53.2
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          }
+        ]
+      },
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      }
+    ],
+    "pumpkin-oat-smoothie": [
+      {
+        "ingredient": "pumpkin",
+        "label": "Cooked pumpkin",
+        "fdcId": 168449,
+        "description": "Pumpkin, cooked, boiled, drained, without salt",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin A, RAE",
+            "unitName": "\u00b5g",
+            "value": 288
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.091
+          }
+        ]
+      },
+      {
+        "ingredient": "oats",
+        "label": "Rolled oats",
+        "fdcId": 169705,
+        "description": "Oats (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 4.92
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.626
+          }
+        ]
+      },
+      {
+        "ingredient": "yogurt",
+        "label": "Plain dairy yogurt",
+        "fdcId": 171284,
+        "description": "Yogurt, plain, whole milk",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-12",
+            "unitName": "\u00b5g",
+            "value": 0.37
+          },
+          {
+            "nutrientName": "Riboflavin",
+            "unitName": "mg",
+            "value": 0.142
+          }
+        ]
+      }
+    ],
+    "beet-performance-shot": [
+      {
+        "ingredient": "beet",
+        "label": "Beet",
+        "fdcId": 169145,
+        "description": "Beets, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 109
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.329
+          }
+        ]
+      },
+      {
+        "ingredient": "apple",
+        "label": "Apple with its skin",
+        "fdcId": 171688,
+        "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          },
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 4.6
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "acv-detox-shot": [
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "tropical-power": [
+      {
+        "ingredient": "mango",
+        "label": "Mango",
+        "fdcId": 169910,
+        "description": "Mangos, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 36.4
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.111
+          }
+        ]
+      },
+      {
+        "ingredient": "pineapple",
+        "label": "Pineapple",
+        "fdcId": 169124,
+        "description": "Pineapple, raw, all varieties",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 47.8
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.927
+          }
+        ]
+      },
+      {
+        "ingredient": "banana",
+        "label": "Banana",
+        "fdcId": 173944,
+        "description": "Bananas, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-6",
+            "unitName": "mg",
+            "value": 0.367
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.27
+          }
+        ]
+      }
+    ],
+    "ginger-immunity-shot": [
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "pineapple-turmeric-juice": [
+      {
+        "ingredient": "pineapple",
+        "label": "Pineapple",
+        "fdcId": 169124,
+        "description": "Pineapple, raw, all varieties",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 47.8
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.927
+          }
+        ]
+      },
+      {
+        "ingredient": "turmeric",
+        "label": "Ground turmeric, if used",
+        "fdcId": 172231,
+        "description": "Spices, turmeric, ground",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 19.8
+          },
+          {
+            "nutrientName": "Iron, Fe",
+            "unitName": "mg",
+            "value": 55.0
+          }
+        ]
+      },
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      }
+    ],
+    "citrus-immunity": [
+      {
+        "ingredient": "orange",
+        "label": "Orange",
+        "fdcId": 169097,
+        "description": "Oranges, raw, all commercial varieties",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 53.2
+          },
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          }
+        ]
+      },
+      {
+        "ingredient": "lemon",
+        "label": "Lemon juice",
+        "fdcId": 167747,
+        "description": "Lemon juice, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 38.7
+          },
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 20.0
+          }
+        ]
+      },
+      {
+        "ingredient": "ginger",
+        "label": "Fresh ginger",
+        "fdcId": 169231,
+        "description": "Ginger root, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.226
+          },
+          {
+            "nutrientName": "Magnesium, Mg",
+            "unitName": "mg",
+            "value": 43.0
+          }
+        ]
+      }
+    ],
+    "mango-passion-fruit-smoothie": [
+      {
+        "ingredient": "mango",
+        "label": "Mango",
+        "fdcId": 169910,
+        "description": "Mangos, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 36.4
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.111
+          }
+        ]
+      },
+      {
+        "ingredient": "yogurt",
+        "label": "Plain dairy yogurt",
+        "fdcId": 171284,
+        "description": "Yogurt, plain, whole milk",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-12",
+            "unitName": "\u00b5g",
+            "value": 0.37
+          },
+          {
+            "nutrientName": "Riboflavin",
+            "unitName": "mg",
+            "value": 0.142
+          }
+        ]
+      }
+    ],
+    "purple-rain": [
+      {
+        "ingredient": "blackberry",
+        "label": "Blackberries",
+        "fdcId": 173946,
+        "description": "Blackberries, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.646
+          },
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 21.0
+          }
+        ]
+      },
+      {
+        "ingredient": "flax",
+        "label": "Ground flaxseed",
+        "fdcId": 169414,
+        "description": "Seeds, flaxseed",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Thiamin",
+            "unitName": "mg",
+            "value": 1.64
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 1.22
+          }
+        ]
+      }
+    ],
+    "beet-energy-juice": [
+      {
+        "ingredient": "beet",
+        "label": "Beet",
+        "fdcId": 169145,
+        "description": "Beets, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Folate, DFE",
+            "unitName": "\u00b5g",
+            "value": 109
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.329
+          }
+        ]
+      },
+      {
+        "ingredient": "apple",
+        "label": "Apple with its skin",
+        "fdcId": 171688,
+        "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Fiber, total dietary",
+            "unitName": "g",
+            "value": 2.4
+          },
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 4.6
+          }
+        ]
+      },
+      {
+        "ingredient": "carrot",
+        "label": "Carrot",
+        "fdcId": 170393,
+        "description": "Carrots, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin A, RAE",
+            "unitName": "\u00b5g",
+            "value": 835
+          },
+          {
+            "nutrientName": "Vitamin K (phylloquinone)",
+            "unitName": "\u00b5g",
+            "value": 13.2
+          }
+        ]
+      }
+    ],
+    "guava-strawberry-smoothie": [
+      {
+        "ingredient": "guava",
+        "label": "Guava",
+        "fdcId": 173044,
+        "description": "Guavas, common, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 228
+          },
+          {
+            "nutrientName": "Copper, Cu",
+            "unitName": "mg",
+            "value": 0.23
+          }
+        ]
+      },
+      {
+        "ingredient": "strawberry",
+        "label": "Strawberries",
+        "fdcId": 167762,
+        "description": "Strawberries, raw",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin C, total ascorbic acid",
+            "unitName": "mg",
+            "value": 58.8
+          },
+          {
+            "nutrientName": "Manganese, Mn",
+            "unitName": "mg",
+            "value": 0.386
+          }
+        ]
+      },
+      {
+        "ingredient": "yogurt",
+        "label": "Plain dairy yogurt",
+        "fdcId": 171284,
+        "description": "Yogurt, plain, whole milk",
+        "nutrientsPer100g": [
+          {
+            "nutrientName": "Vitamin B-12",
+            "unitName": "\u00b5g",
+            "value": 0.37
+          },
+          {
+            "nutrientName": "Riboflavin",
+            "unitName": "mg",
+            "value": 0.142
+          }
+        ]
+      }
+    ]
+  }
+}

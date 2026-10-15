@@ -1,4 +1,4 @@
-IMAGES NEEDED — Made's Healthy Treats
+IMAGES NEEDED — Madeshealthytreats
 All images should be: bright natural lighting, food photography style,
 top-down or 45-degree angle, clean white or colorful background.
 

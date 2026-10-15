@@ -1,0 +1,72 @@
+{
+  "postWordCounts": {
+    "blog-superfoods.html": {
+      "before": 177,
+      "after": 523,
+      "increase": 346
+    },
+    "blog-ginger.html": {
+      "before": 171,
+      "after": 547,
+      "increase": 376
+    },
+    "blog-probiotics.html": {
+      "before": 173,
+      "after": 517,
+      "increase": 344
+    },
+    "blog-beet-juice-benefits.html": {
+      "before": 185,
+      "after": 540,
+      "increase": 355
+    },
+    "blog-wellness-shot-benefits.html": {
+      "before": 151,
+      "after": 491,
+      "increase": 340
+    },
+    "blog-celery-juice.html": {
+      "before": 195,
+      "after": 546,
+      "increase": 351
+    },
+    "blog-30-days-green-smoothie.html": {
+      "before": 207,
+      "after": 555,
+      "increase": 348
+    },
+    "blog-fat-burning-smoothie.html": {
+      "before": 175,
+      "after": 522,
+      "increase": 347
+    },
+    "blog-do-juice-cleanses-work.html": {
+      "before": 188,
+      "after": 534,
+      "increase": 346
+    },
+    "blog-best-morning-juice.html": {
+      "before": 361,
+      "after": 639,
+      "increase": 278
+    },
+    "blog-smoothie-vs-juicing.html": {
+      "before": 445,
+      "after": 633,
+      "increase": 188
+    }
+  },
+  "excludedPages": [
+    "admin/index.html",
+    "blog-detox-juice.html",
+    "blog-green-smoothie-every-day.html",
+    "blog-juices-good-for-liver.html",
+    "blog-morning-vs-evening.html",
+    "blog-post.html",
+    "blog-smoothie-a-day-weight-loss.html",
+    "blog-smoothie-meal-replacement.html",
+    "coming-soon.html",
+    "recipe-single.html",
+    "saved.html"
+  ]
+}

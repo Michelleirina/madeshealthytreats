@@ -1,0 +1,500 @@
+{
+  "wheatgrass-energy-shot": [
+    {
+      "ingredient": "cucumber",
+      "label": "Cucumber",
+      "nutrient": "Potassium, K",
+      "fdcId": 168409
+    },
+    {
+      "ingredient": "mint",
+      "label": "Fresh mint leaves",
+      "nutrient": "Folate, total",
+      "fdcId": 173475
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    }
+  ],
+  "turmeric-golden-shot": [
+    {
+      "ingredient": "turmeric",
+      "label": "Ground turmeric",
+      "nutrient": "Manganese, Mn",
+      "fdcId": 172231
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    }
+  ],
+  "green-detox": [
+    {
+      "ingredient": "spinach",
+      "label": "Spinach",
+      "nutrient": "Folate, total",
+      "fdcId": 168462
+    },
+    {
+      "ingredient": "banana",
+      "label": "Banana",
+      "nutrient": "Potassium, K",
+      "fdcId": 173944
+    },
+    {
+      "ingredient": "cucumber",
+      "label": "Cucumber",
+      "nutrient": "Potassium, K",
+      "fdcId": 168409
+    }
+  ],
+  "watermelon-mint": [
+    {
+      "ingredient": "watermelon",
+      "label": "Watermelon",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167765
+    },
+    {
+      "ingredient": "chia",
+      "label": "Chia seeds",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 170554
+    },
+    {
+      "ingredient": "coconut-water",
+      "label": "Coconut water",
+      "nutrient": "Potassium, K",
+      "fdcId": 170174
+    }
+  ],
+  "papaya-lime-smoothie": [
+    {
+      "ingredient": "papaya",
+      "label": "Papaya",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169926
+    },
+    {
+      "ingredient": "yogurt",
+      "label": "Plain dairy yogurt",
+      "nutrient": "Calcium, Ca",
+      "fdcId": 171284
+    },
+    {
+      "ingredient": "lime",
+      "label": "Lime",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 168155
+    }
+  ],
+  "peanut-butter-banana": [
+    {
+      "ingredient": "peanut",
+      "label": "Peanut butter",
+      "nutrient": "Protein",
+      "fdcId": 172470
+    },
+    {
+      "ingredient": "banana",
+      "label": "Banana",
+      "nutrient": "Potassium, K",
+      "fdcId": 173944
+    },
+    {
+      "ingredient": "oats",
+      "label": "Rolled oats",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 169705
+    }
+  ],
+  "cucumber-mint-juice": [
+    {
+      "ingredient": "cucumber",
+      "label": "Cucumber",
+      "nutrient": "Potassium, K",
+      "fdcId": 168409
+    },
+    {
+      "ingredient": "apple",
+      "label": "Apple with its skin",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 171688
+    },
+    {
+      "ingredient": "mint",
+      "label": "Fresh mint leaves",
+      "nutrient": "Calcium, Ca",
+      "fdcId": 173475
+    }
+  ],
+  "chamomile-lemon-tea": [
+    {
+      "ingredient": "lemon-wedge",
+      "label": "Lemon",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167746
+    },
+    {
+      "ingredient": "honey",
+      "label": "Optional honey",
+      "nutrient": "Carbohydrate, by difference",
+      "fdcId": 169640
+    }
+  ],
+  "matcha-lean": [
+    {
+      "ingredient": "banana",
+      "label": "Banana",
+      "nutrient": "Potassium, K",
+      "fdcId": 173944
+    },
+    {
+      "ingredient": "chia",
+      "label": "Chia seeds",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 170554
+    }
+  ],
+  "celery-detox-juice": [
+    {
+      "ingredient": "celery",
+      "label": "Celery",
+      "nutrient": "Potassium, K",
+      "fdcId": 169988
+    },
+    {
+      "ingredient": "cucumber",
+      "label": "Cucumber",
+      "nutrient": "Potassium, K",
+      "fdcId": 168409
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    }
+  ],
+  "fresh-mint-tea": [
+    {
+      "ingredient": "mint",
+      "label": "Fresh mint leaves",
+      "nutrient": "Calcium, Ca",
+      "fdcId": 173475
+    },
+    {
+      "ingredient": "lemon-wedge",
+      "label": "Optional lemon",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167746
+    }
+  ],
+  "tamarind-ginger-cooler": [
+    {
+      "ingredient": "tamarind",
+      "label": "Tamarind",
+      "nutrient": "Potassium, K",
+      "fdcId": 167763
+    },
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 169231
+    },
+    {
+      "ingredient": "sugar",
+      "label": "Optional sugar",
+      "nutrient": "Carbohydrate, by difference",
+      "fdcId": 169655
+    }
+  ],
+  "golden-glow": [
+    {
+      "ingredient": "papaya",
+      "label": "Papaya",
+      "nutrient": "Folate, total",
+      "fdcId": 169926
+    },
+    {
+      "ingredient": "carrot",
+      "label": "Carrot",
+      "nutrient": "Vitamin A, RAE",
+      "fdcId": 170393
+    },
+    {
+      "ingredient": "orange",
+      "label": "Orange",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169097
+    }
+  ],
+  "hibiscus-ginger-tea": [
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Potassium, K",
+      "fdcId": 169231
+    },
+    {
+      "ingredient": "honey",
+      "label": "Optional honey",
+      "nutrient": "Carbohydrate, by difference",
+      "fdcId": 169640
+    }
+  ],
+  "berry-probiotic": [
+    {
+      "ingredient": "strawberry",
+      "label": "Strawberries",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167762
+    },
+    {
+      "ingredient": "flax",
+      "label": "Ground flaxseed",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 169414
+    },
+    {
+      "ingredient": "oats",
+      "label": "Rolled oats",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 169705
+    }
+  ],
+  "carrot-ginger-juice": [
+    {
+      "ingredient": "carrot",
+      "label": "Carrot",
+      "nutrient": "Vitamin A, RAE",
+      "fdcId": 170393
+    },
+    {
+      "ingredient": "orange",
+      "label": "Orange",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169097
+    },
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Potassium, K",
+      "fdcId": 169231
+    }
+  ],
+  "pumpkin-oat-smoothie": [
+    {
+      "ingredient": "pumpkin",
+      "label": "Cooked pumpkin",
+      "nutrient": "Vitamin A, RAE",
+      "fdcId": 168449
+    },
+    {
+      "ingredient": "oats",
+      "label": "Rolled oats",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 169705
+    },
+    {
+      "ingredient": "yogurt",
+      "label": "Plain dairy yogurt",
+      "nutrient": "Protein",
+      "fdcId": 171284
+    }
+  ],
+  "beet-performance-shot": [
+    {
+      "ingredient": "beet",
+      "label": "Beet",
+      "nutrient": "Folate, total",
+      "fdcId": 169145
+    },
+    {
+      "ingredient": "apple",
+      "label": "Apple with its skin",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 171688
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    }
+  ],
+  "acv-detox-shot": [
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    },
+    {
+      "ingredient": "honey",
+      "label": "Optional honey",
+      "nutrient": "Carbohydrate, by difference",
+      "fdcId": 169640
+    }
+  ],
+  "tropical-power": [
+    {
+      "ingredient": "mango",
+      "label": "Mango",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169910
+    },
+    {
+      "ingredient": "pineapple",
+      "label": "Pineapple",
+      "nutrient": "Manganese, Mn",
+      "fdcId": 169124
+    },
+    {
+      "ingredient": "banana",
+      "label": "Banana",
+      "nutrient": "Potassium, K",
+      "fdcId": 173944
+    }
+  ],
+  "ginger-immunity-shot": [
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Potassium, K",
+      "fdcId": 169231
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    },
+    {
+      "ingredient": "honey",
+      "label": "Optional honey",
+      "nutrient": "Carbohydrate, by difference",
+      "fdcId": 169640
+    }
+  ],
+  "pineapple-turmeric-juice": [
+    {
+      "ingredient": "pineapple",
+      "label": "Pineapple",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169124
+    },
+    {
+      "ingredient": "turmeric",
+      "label": "Ground turmeric, if used",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 172231
+    },
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Potassium, K",
+      "fdcId": 169231
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    }
+  ],
+  "citrus-immunity": [
+    {
+      "ingredient": "orange",
+      "label": "Orange",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 169097
+    },
+    {
+      "ingredient": "lemon",
+      "label": "Lemon juice",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167747
+    },
+    {
+      "ingredient": "ginger",
+      "label": "Fresh ginger",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 169231
+    }
+  ],
+  "mango-passion-fruit-smoothie": [
+    {
+      "ingredient": "mango",
+      "label": "Mango",
+      "nutrient": "Folate, total",
+      "fdcId": 169910
+    },
+    {
+      "ingredient": "yogurt",
+      "label": "Plain dairy yogurt",
+      "nutrient": "Calcium, Ca",
+      "fdcId": 171284
+    }
+  ],
+  "purple-rain": [
+    {
+      "ingredient": "blackberry",
+      "label": "Blackberries",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 173946
+    },
+    {
+      "ingredient": "flax",
+      "label": "Ground flaxseed",
+      "nutrient": "Magnesium, Mg",
+      "fdcId": 169414
+    }
+  ],
+  "beet-energy-juice": [
+    {
+      "ingredient": "beet",
+      "label": "Beet",
+      "nutrient": "Potassium, K",
+      "fdcId": 169145
+    },
+    {
+      "ingredient": "apple",
+      "label": "Apple with its skin",
+      "nutrient": "Fiber, total dietary",
+      "fdcId": 171688
+    },
+    {
+      "ingredient": "carrot",
+      "label": "Carrot",
+      "nutrient": "Vitamin A, RAE",
+      "fdcId": 170393
+    }
+  ],
+  "guava-strawberry-smoothie": [
+    {
+      "ingredient": "guava",
+      "label": "Guava",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 173044
+    },
+    {
+      "ingredient": "strawberry",
+      "label": "Strawberries",
+      "nutrient": "Vitamin C, total ascorbic acid",
+      "fdcId": 167762
+    },
+    {
+      "ingredient": "yogurt",
+      "label": "Plain dairy yogurt",
+      "nutrient": "Protein",
+      "fdcId": 171284
+    }
+  ]
+}
