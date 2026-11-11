@@ -102,7 +102,7 @@
 .recipe-source-note { font-size:14px; border-top:1px dashed #68543150; padding-top:20px; margin-top:28px; }
 .scrapbook :focus-visible { outline:3px solid #8d3458; outline-offset:5px; }
 @media (max-width:1150px) { .scrapbook .nav-links { gap:10px; } .scrapbook .nav-cta { display:none; } }
-@media (max-width:900px) { .scrapbook .nav-hamburger { display:block; } .scrapbook .nav-links { display:none; } .scrapbook .nav-links.open { display:flex; flex-direction:column; position:absolute; top:100%; left:0; right:0; padding:20px; background:#fffaf0; box-shadow:0 15px 20px #33442218; } .tea-hero-grid { gap:35px; } }
+@media (max-width:900px) { .scrapbook .navbar.nav-ready .nav-hamburger { display:block; } .scrapbook .nav-ready .nav-links { display:none; } .scrapbook .nav-ready .nav-links.open { display:flex; max-height:60vh; overflow-y:auto; flex-direction:column; position:absolute; top:100%; left:0; right:0; padding:20px; background:#fffaf0; box-shadow:0 15px 20px #33442218; } .tea-hero-grid { gap:35px; } }
 @media (max-width:760px) {
  .tea-hero-grid { grid-template-columns:1fr; gap:34px; }
  .scrapbook-welcome { padding:44px 0 42px; }
@@ -230,3 +230,10 @@
 }
 @media (prefers-reduced-motion:reduce) {.bright-sticker,.bright-spark {animation:none;}}
 .bright-status {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+
+/* Keep navigation available if the shared script does not load. */
+@media (max-width:900px) {
+  .scrapbook .navbar:not(.nav-ready) { position:relative; flex-wrap:wrap; }
+  .scrapbook .navbar:not(.nav-ready) .nav-links { width:100%; flex-wrap:wrap; gap:10px 16px; }
+}
+.bright-hero:not(.carousel-ready) .bright-controls { display:none; }
