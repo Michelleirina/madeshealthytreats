@@ -10,10 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", setScrolled, { passive: true });
 
   if (hamburger && navLinks) {
-    hamburger.addEventListener("click", () => {
-      const open = navLinks.classList.toggle("open");
+    const setMenuOpen = (open) => {
+      navLinks.classList.toggle("open", open);
       hamburger.setAttribute("aria-expanded", String(open));
+    };
+    hamburger.addEventListener("click", () => {
+      setMenuOpen(!navLinks.classList.contains("open"));
     });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !navLinks.classList.contains("open")) return;
+      setMenuOpen(false);
+      if (navbar.contains(document.activeElement)) hamburger.focus();
+    });
+    navbar.classList.add("nav-ready");
   }
 
   const pathName = window.location.pathname.split("/").pop() || "index.html";
@@ -54,21 +63,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("vis");
-        revealObserver.unobserve(entry.target);
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("reveal-pending");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    document.querySelectorAll(".reveal, .ingredient-row").forEach((el, index) => {
+      if (el.classList.contains("ingredient-row")) {
+        el.style.transitionDelay = `${Math.min(index * 70, 420)}ms`;
       }
+      revealObserver.observe(el);
+      el.classList.add("reveal-pending");
     });
-  }, { threshold: 0.14 });
-
-  document.querySelectorAll(".reveal, .ingredient-row").forEach((el, index) => {
-    if (el.classList.contains("ingredient-row")) {
-      el.style.transitionDelay = `${Math.min(index * 70, 420)}ms`;
-    }
-    revealObserver.observe(el);
-  });
+  }
 
   document.querySelectorAll(".filter-tabs").forEach((tabGroup) => {
     const scope = tabGroup.dataset.scope || "body";
@@ -90,7 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const isCollection = location.pathname.replace(/\.html$/, "") === "/recipes";
     const fromUrl = new URLSearchParams(location.search).get("category") || "all";
     const initial = [...tabGroup.querySelectorAll(".filter-btn")].find(btn => btn.dataset.filter === fromUrl) || tabGroup.querySelector(".filter-btn");
-    if (initial) applyFilter(initial);
+    if (!initial) return;
+    applyFilter(initial);
     tabGroup.addEventListener("click", (event) => {
       const button = event.target.closest(".filter-btn");
       if (!button || !tabGroup.contains(button)) return;
@@ -102,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         history.replaceState(null, "", url.pathname + url.search + url.hash);
       }
     });
+    tabGroup.classList.add("filters-ready");
   });
 
 });
