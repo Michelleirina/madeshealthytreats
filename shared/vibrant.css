@@ -1,0 +1,210 @@
+/* Bright, modern scrapbook: shared by every public page. */
+:root {
+    --font-heading: "Fredoka", "Arial Rounded MT Bold", sans-serif;
+    --font-display: "Fredoka", "Arial Rounded MT Bold", sans-serif;
+    --green: #075438;
+    --green-mid: #147343;
+    --teal: #08765f;
+    --mint: #b6f475;
+    --mint-pale: #e8ffd4;
+    --pink: #ffc3e2;
+    --pink-pale: #fff0f8;
+    --yellow: #ffe449;
+    --yellow-pale: #fff5a6;
+    --cream: #fff;
+    --dark: #153c32;
+    --gray: #40564f;
+    --shadow: 0 12px 32px #143c320d;
+}
+body.scrapbook {
+  --paper: #effaff;
+  --accent: #075438;
+  --note: #fff3a2;
+  --second: #ffd8ed;
+  --garden-pink: #ffc3e2;
+  --garden-yellow: #ffe957;
+  --garden-blue: #bceeff;
+  --garden-lime: #d6ff85;
+  --garden-lilac: #e3c7ff;
+  color: var(--dark);
+  background: #f3fcff;
+  font-size: 16px;
+}
+body.scrapbook.chamomile { --paper: #fff8ba; --accent: #075438; --note: #e8d4ff; --second: #d8f8ff; }
+body.scrapbook.hibiscus { --paper: #ffe2f2; --accent: #075438; --note: #fff3a2; --second: #ead7ff; }
+body.scrapbook[data-garden-color="pink"] { --paper: #ffe5f3; }
+body.scrapbook[data-garden-color="yellow"] { --paper: #fff8b9; }
+body.scrapbook[data-garden-color="lime"] { --paper: #e7ffc2; }
+body.scrapbook[data-garden-color="lilac"] { --paper: #efe0ff; }
+body.scrapbook main { background-image: none; }
+.scrapbook :is(h1,h2,h3,h4,.footer-brand) { font-family: var(--font-heading); font-weight: 600; font-style: normal; letter-spacing: -.025em; }
+.scrapbook :is(h1,h2,h3) { color: var(--green); text-wrap: balance; }
+.scrapbook :is(h1,h2,h3) .italic, .scrapbook h1 em, .scrapbook h2 em { font-style: normal; color: #b20b63; }
+.scrapbook :is(p,li) { line-height: 1.75; }
+.scrapbook .lead { color: #35564b; font-size: 18px; }
+.scrapbook .eyebrow, .scrapbook .read-more { color: #8d1254; }
+.scrapbook .eyebrow { font-size: 13px; letter-spacing: .1em; }
+.scrapbook .navbar, .scrapbook .brand-home {
+  background: #fff;
+  border-bottom: 3px solid #ffe449;
+  box-shadow: 0 4px 20px #0a573509;
+  padding: 14px 30px;
+  gap: 24px;
+}
+.scrapbook .brand-home { flex-direction: row; }
+.scrapbook.bright-home .brand-home { background: #fff; border-bottom-color: #ffe449; }
+.scrapbook .brand-logo, .scrapbook .brand-home .brand-logo { width: 365px; height: auto; }
+.scrapbook .illustrated-brand { min-width: 0; }
+.scrapbook .nav-links, .scrapbook .brand-home .nav-links { gap: 14px; flex-wrap: nowrap; }
+.scrapbook .nav-link { color: #164d38; font-size: 14px; font-weight: 700; }
+.scrapbook .nav-link.active { background: #e0ff9d; color: #075438; border-radius: 999px; padding: 8px 12px; }
+.scrapbook .nav-link:hover { color: #ad0759; }
+.scrapbook .nav-cta { display: none; }
+.scrapbook .btn { min-height: 46px; border-radius: 999px; font-size: 16px; }
+.scrapbook :is(.btn-teal,.btn-green) { background: #bb0860; color: #fff; }
+.scrapbook :is(.btn-teal,.btn-green):hover { background: #97024c; }
+.scrapbook .btn-yellow { background: #ffe449; color: #075438; }
+.scrapbook .btn-ghost { background: #fff; color: #075438; border: 1px solid #739e8a; }
+.scrapbook :is(.ribbon,.scrap-label) { background: #ffe449; color: #16412f; border-radius: 999px; box-shadow: none; font-size: 13px; letter-spacing: .04em; }
+.scrapbook .section { padding: 72px 0; }
+.scrapbook :is(.single-hero,.page-hero,.tea-recipe-hero,.tea-corner-hero,.scrapbook-welcome) { background: var(--paper) !important; }
+.scrapbook :is(.single-hero,.page-hero,.tea-corner-hero) { padding: 64px 0 48px; }
+.scrapbook .page-hero .lead, .scrapbook .single-hero .lead { margin-left: auto; margin-right: auto; }
+.scrapbook .page-hero h1 { overflow-wrap: anywhere; }
+.scrapbook .recipe-story { background: #f2fbff; }
+.scrapbook .recipes-section { background: #f1faff; }
+.scrapbook :is(.blog-section,.tea-collection) { background: #ebdcff; }
+.scrapbook #juice-preview, .scrapbook .tea-brew-notes { background: #fff4a3; }
+.scrapbook #shots-preview, .scrapbook .newsletter { background: #ffd9ee; }
+.scrapbook .featured, .scrapbook .why-section { background: #deffac; }
+.scrapbook main > .section[style*="background:#fff"] { background: #f0faff !important; }
+.scrapbook main > .section[style*="background:#fff"]:nth-child(even) { background: #f7edff !important; }
+.scrapbook :is(.recipe-card,.blog-card,.info-card,.panel,.featured-post) { border: 1px solid #13523715; border-radius: 26px; box-shadow: 0 8px 26px #0e50300b; overflow: hidden; }
+.scrapbook :is(.recipe-card,.blog-card) { background: #fff; }
+.scrapbook :is(.recipe-card,.blog-card):hover { box-shadow: 0 14px 28px #0e503018; transform: translateY(-4px); }
+.scrapbook .card-body { background: #fff0a2; }
+.scrapbook :is(.recipe-card,.blog-card):nth-child(3n+2) .card-body { background: #ffd4eb; }
+.scrapbook :is(.recipe-card,.blog-card):nth-child(3n) .card-body { background: #d9edff; }
+.scrapbook .tea-card.mint .card-body { background: #dfffaa; }
+.scrapbook .tea-card.chamomile .card-body { background: #fff1a0; }
+.scrapbook .tea-card.hibiscus .card-body { background: #eedaff; }
+.scrapbook .card-body h3 { font-size: clamp(24px,2.5vw,30px); line-height: 1.17; }
+.scrapbook .info-card { background: #fff3ac; }
+.scrapbook .info-card:nth-child(2) { background: #ffd9ec; }
+.scrapbook .info-card:nth-child(3) { background: #e7d5ff; }
+.scrapbook :is(.recipe-post,.article-main,.article-shell > .article,.container.article) { background: #fff; border-radius: 28px; border: 1px solid #0b543515; box-shadow: 0 12px 40px #0b543508; padding: 34px; }
+.scrapbook .recipe-post h2 { line-height: 1.2; font-size: clamp(27px,3vw,36px); }
+.scrapbook :is(.article,.article-main) h2 { font-size: clamp(27px,3vw,36px); line-height: 1.2; }
+.scrapbook .recipe-post-grid { grid-template-columns: minmax(0,1fr) 310px; gap: 30px; }
+.scrapbook :is(.recipe-post,.article,.article-main) a:not(.btn) { color: #07664e; text-decoration: underline; text-underline-offset: 3px; }
+.scrapbook :is(.recipe-post,.article,.article-main) h2 { padding-top: 14px; border-top: 4px solid #d5f49a; }
+.scrapbook :is(.recipe-post,.article,.article-main) h2:nth-of-type(3n+2) { border-top-color: #ffc0e0; }
+.scrapbook :is(.recipe-post,.article,.article-main) h2:nth-of-type(3n) { border-top-color: #dbbcff; }
+.scrapbook .styled-list li { border: 0; background: #e6ffbc; color: #16412f; border-radius: 16px; }
+.scrapbook .styled-list li:nth-child(even) { background: #fff3ab; }
+.scrapbook .styled-list li:nth-child(3n) { background: #f3e4ff; }
+.scrapbook .step-card { border: 0; background: #dcf3ff; border-radius: 18px; padding: 20px; }
+.scrapbook .step-card:nth-of-type(even) { background: #ffe1f1; }
+.scrapbook .step-card p { margin: 0; }
+.scrapbook .step-num { background: #075438; color: #fff; }
+.scrapbook .drink-ingredients-facts { background: #f3e8ff; border-radius: 20px; padding: 20px 24px; margin: 28px 0; }
+.scrapbook .drink-ingredients-facts h2 { border: 0; margin-top: 0; padding-top: 0; }
+.scrapbook :is(.tips-box,.article-contents) { background: #fff3a5; border: 0; border-radius: 20px; }
+.scrapbook details { background: #e8f7ff; border-radius: 16px; border: 1px solid #abdff0; }
+.scrapbook details:nth-of-type(even) { background: #fff0f8; border-color: #f5c4dd; }
+.scrapbook .recipe-byline, .scrapbook .recipe-source-note { color: #40564f; }
+.scrapbook .recipe-sidebar { top: 160px; }
+.scrapbook .scrap-photo { background: #fff; padding: 10px; border-radius: 28px; transform: rotate(2deg); box-shadow: 0 15px 32px #15482e15; }
+.scrapbook .scrap-photo::before, .scrapbook .scrapbook-note::before { display: none; }
+.scrapbook .scrap-photo img { border-radius: 20px; }
+.scrapbook .scrapbook-note { transform: none; }
+.scrapbook .filter-btn { color: #16412f; background: #fff; border: 1px solid #83ad99; min-height: 44px; }
+.scrapbook .filter-btn.active { background: #075438; color: #fff; }
+.scrapbook .soft-badge { background: #fff; color: #075438; border-color: #b9ddc6; }
+.scrapbook .goal-badge { background: #ffe449; color: #16412f; }
+.scrapbook .green-cta { background: #d6ff9e; }
+.scrapbook .green-cta :is(h2,p) { color: #075438; }
+.scrapbook .article-hero { min-height: 0; height: auto; grid-template-columns: minmax(0,1fr) minmax(0,1fr); padding: 54px max(24px,calc((100vw - 1120px)/2)); gap: 40px; background: #e8d7ff; }
+.scrapbook .article-hero::before,.scrapbook .article-hero::after { display: none; }
+.scrapbook .article-hero img { width: 100%; height: 440px; min-height: 0; object-fit: cover; border-radius: 28px; box-shadow: none; }
+.scrapbook .article-hero .container { width: 100%; margin: 0; transform: none; padding: 32px; background: #fff0a1; border: 0; border-radius: 28px; box-shadow: none; backdrop-filter: none; }
+.scrapbook .article-hero h1 { max-width: none; font-size: clamp(34px,3.5vw,52px); line-height: 1.1; color: #075438; }
+.scrapbook .article-hero .eyebrow { color: #8d1254 !important; background: #fff; border: 0; }
+.scrapbook :is(.editorial-blog-index-hero,.editorial-shots-hero) { background: #ddf5ff; }
+.scrapbook :is(.editorial-blog-index-hero,.editorial-shots-hero)::before { display: none; }
+.scrapbook .footer { background: #e6d1ff; border-top: 0; padding-bottom: 70px; }
+.scrapbook .footer :is(p,a,h4,.footer-brand,.footer-bottom) { color: #16412f; }
+.scrapbook .footer .socials a { background: #fff; color: #075438; }
+.scrapbook .footer::before, .scrapbook .footer::after, .scrapbook .featured::before, .scrapbook .featured::after { display: none; }
+.scrapbook .footer-brand { display: block; font-size: clamp(22px,2.5vw,30px); overflow-wrap: anywhere; }
+.scrapbook :focus-visible { outline: 3px solid #a00860; outline-offset: 4px; }
+
+/* Retain the working carousel and give its panels the new clear palette. */
+.scrapbook .bright-slide.pink { background: #ffc4e2; }
+.scrapbook .bright-slide.yellow { background: #ffed65; }
+.scrapbook .bright-slide.blue { background: #bceeff; }
+.scrapbook .bright-slide.lime { background: #dbff8f; }
+.scrapbook .bright-copy :is(h1,h2) { color: #075438; font-weight: 600; }
+.scrapbook .bright-copy .ribbon { color: #a00860; box-shadow: none; }
+.scrapbook .bright-orbit { border: 0; background: #d6b5ff; width: 90%; height: 90%; border-radius: 42% 58% 64% 36%; }
+.scrapbook .bright-photo { border: 7px solid #fff; border-radius: 36% 44% 38% 45%; box-shadow: 0 15px 30px #0b54351a; }
+.scrapbook .bright-label { background: #fff; border-radius: 999px; box-shadow: none; }
+.scrapbook .label-two { background: #ffed65; }
+.scrapbook .bright-dot.active::after { background: #a00860; }
+
+/* Ingredient stickers occupy decorative bands, away from reading and controls. */
+.garden-band { position: relative; display: flex; justify-content: center; align-items: center; gap: clamp(32px,7vw,110px); min-height: 128px; padding: 14px 24px; overflow: hidden; background: linear-gradient(100deg,#fff0f8,#ebfbff 55%,#f3ffe2); border-block: 1px solid #ffffff; }
+.garden-band::before,.garden-band::after { content: ''; position: absolute; width: 34px; height: 34px; background: #ffd936; border-radius: 45% 55% 60% 40%; left: 12%; top: 38px; transform: rotate(24deg); }
+.garden-band::after { background: #e1b5ff; left: auto; right: 12%; width: 20px; height: 20px; top: 65px; }
+.garden-bottom { background: #d9f5ff; }
+.garden-fruit { position: relative; width: clamp(68px,8vw,106px); height: 96px; object-fit: contain; transform: rotate(var(--tilt)); filter: drop-shadow(0 6px 4px #14513816); animation: garden-bob 6s ease-in-out infinite; animation-delay: var(--delay); animation-play-state: paused; }
+.garden-in-view .garden-fruit { animation-play-state: running; }
+@keyframes garden-bob { 0%,100% { transform: translateY(3px) rotate(var(--tilt)); } 50% { transform: translateY(-8px) rotate(calc(var(--tilt) + 5deg)); } }
+.motion-toggle { position: fixed; bottom: 14px; left: 14px; z-index: 210; border: 1px solid #aac9bc; border-radius: 999px; padding: 10px 14px; background: #fff; color: #16412f; font-size: 13px; font-weight: 700; box-shadow: 0 3px 14px #15482e12; cursor: pointer; min-height: 40px; }
+.motion-paused :is(.garden-fruit,.bright-sticker,.bright-spark), .garden-tab-hidden :is(.garden-fruit,.bright-sticker,.bright-spark) { animation-play-state: paused !important; }
+@media (min-width:1600px) { .scrapbook .brand-logo,.scrapbook .brand-home .brand-logo { width: 430px; } }
+@media (min-width:901px) and (max-width:1250px) { .scrapbook .navbar:not(.brand-home) .brand-logo,.scrapbook .brand-home .brand-logo { width: 285px; } .scrapbook .nav-links,.scrapbook .brand-home .nav-links { gap: 10px; } }
+@media (max-width:1050px) and (min-width:901px) { .scrapbook .navbar { padding-inline: 18px; gap: 16px; } .scrapbook .nav-link { font-size: 13px; } .scrapbook .navbar:not(.brand-home) .brand-logo,.scrapbook .brand-home .brand-logo { width: 245px; } }
+@media (max-width:900px) {
+  .scrapbook .navbar,.scrapbook .brand-home { flex-direction: row; min-height: 104px; padding: 12px 20px; }
+  .scrapbook .brand-logo,.scrapbook .brand-home .brand-logo { width: 345px; }
+  .scrapbook .navbar.nav-ready .nav-links.open { background: #fff; gap: 8px; }
+  .scrapbook .nav-links.open .nav-link { padding: 12px 16px; text-align: left; }
+  .scrapbook .recipe-post-grid { grid-template-columns: 1fr; }
+  .scrapbook .recipe-sidebar { position: static; }
+}
+@media (max-width:760px) {
+  .scrapbook .article-hero { display: flex; flex-direction: column; padding: 24px 20px 32px; gap: 20px; }
+  .scrapbook .article-hero img { height: 300px; border-radius: 24px; }
+  .scrapbook .article-hero .container { width: 100% !important; max-width: none !important; padding: 24px; margin: 0; }
+  .scrapbook .article-hero h1 { font-size: clamp(30px,7vw,42px); }
+  .scrapbook .section { padding: 44px 0; }
+  .scrapbook :is(.recipe-post,.article-main,.article-shell > .article,.container.article) { padding: 24px 18px; border-radius: 22px; }
+  .scrapbook :is(.article,.article-main,.recipe-post) { font-size: 17px; }
+  .scrapbook .drink-ingredients-facts { padding: 18px; }
+  .scrapbook .page-hero h1 { font-size: clamp(34px,8vw,52px); }
+  .garden-band { min-height: 98px; gap: 40px; padding: 10px 24px; }
+  .garden-fruit { width: 70px; height: 76px; }
+  .garden-fruit:nth-child(n+4) { display: none; }
+  .garden-band::before { left: 6%; width: 14px; height: 14px; }
+  .garden-band::after { right: 6%; width: 10px; height: 10px; }
+}
+@media (max-width:480px) {
+  .scrapbook .navbar,.scrapbook .brand-home { min-height: 94px; padding: 10px 14px; gap: 10px; }
+  .scrapbook .illustrated-brand,.scrapbook .brand-home .illustrated-brand { max-width: calc(100% - 48px); }
+  .scrapbook .brand-logo,.scrapbook .brand-home .brand-logo { width: 100%; }
+  .scrapbook .footer-grid { grid-template-columns: 1fr; }
+  .scrapbook .tea-recipe-hero h1 { font-size: 38px; }
+  .scrapbook .bright-copy :is(h1,h2) { font-size: 38px; }
+  .garden-band { gap: 30px; }
+  .garden-fruit { width: 64px; }
+}
+@media (prefers-reduced-motion:reduce) { .garden-fruit,.bright-sticker,.bright-spark { animation: none !important; } }
+@media print {
+  .garden-band,.motion-toggle { display: none !important; }
+  .scrapbook :is(.recipe-post,.article-main,.article-shell > .article,.container.article) { border: 0; box-shadow: none; padding: 0; }
+  .scrapbook .recipe-story,.scrapbook .drink-ingredients-facts { background: #fff; }
+}
+
+.scrapbook [id] { scroll-margin-top: 165px; }
+@media (max-width:900px) { .scrapbook [id] { scroll-margin-top: 115px; } }
