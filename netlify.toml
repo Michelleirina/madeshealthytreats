@@ -11,6 +11,25 @@
 [build]
   publish = "."
 
+# Preserve old homepage links reported by Google Search Console.
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/home//"
+  to = "/"
+  status = 301
+  force = true
+
 # Retire duplicate example pages while preserving old links.
 [[redirects]]
   from = "/recipe-single"
